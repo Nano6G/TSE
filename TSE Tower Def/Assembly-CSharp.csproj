@@ -72,6 +72,7 @@
     <Compile Include="Assets\Scripts\Enemies\WaypointsScript.cs" />
     <Compile Include="Assets\Scripts\Manager.cs" />
     <Compile Include="Assets\Scripts\Player\BaseTowerScript.cs" />
+    <Compile Include="Assets\Scripts\Player\BasicProjectile.cs" />
     <Compile Include="Assets\Scripts\Player\TowerScriptableObject.cs" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.17f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>

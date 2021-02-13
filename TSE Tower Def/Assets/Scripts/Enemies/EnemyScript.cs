@@ -30,10 +30,20 @@ public class EnemyScript : MonoBehaviour
         //move towards target, normalized fixes size so speed doesnt change
         transform.Translate(dir.normalized * speed * Time.deltaTime, Space.World);
 
-        if(Vector2.Distance(transform.position, target.position) <= .3f)
+        if (Vector2.Distance(transform.position, target.position) <= .3f)
         {
             GetNextWayPoint();
         }
+        if (health <= 0)
+        {
+            Debug.Log("Destroyed");
+            Destroy(gameObject);
+        }
+    }
+
+    public void GetHit(int PhysDmg)
+    {
+        health -= PhysDmg;
     }
 
     //change move target
