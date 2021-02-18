@@ -6,20 +6,8 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Tower", menuName = "ScriptableObjects/Tower", order = 1)]
 public class TowerScriptableObject : ScriptableObject
 {
-    [SerializeField]
-    float damage, range;
-
+    public float damage;
+    public float range;
     public Sprite sprite;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public GameObject projectile;
 }

@@ -64,6 +64,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Cards\BaseCard.cs" />
+    <Compile Include="Assets\Scripts\Cards\Card.cs" />
+    <Compile Include="Assets\Scripts\Cards\TowerCardScriptableObject.cs" />
     <Compile Include="Assets\Scripts\Enemies\EnemyScript.cs" />
     <Compile Include="Assets\Scripts\Enemies\EnemyScriptableObject.cs" />
     <Compile Include="Assets\Scripts\Enemies\WaveManager.cs" />
@@ -71,9 +74,10 @@
     <Compile Include="Assets\Scripts\Enemies\WaveSpawner.cs" />
     <Compile Include="Assets\Scripts\Enemies\WaypointsScript.cs" />
     <Compile Include="Assets\Scripts\Manager.cs" />
-    <Compile Include="Assets\Scripts\Player\BaseTowerScript.cs" />
     <Compile Include="Assets\Scripts\Player\BasicProjectile.cs" />
     <Compile Include="Assets\Scripts\Player\TowerScriptableObject.cs" />
+    <Compile Include="Assets\Scripts\Player\Towers\BaseTowerScript.cs" />
+    <Compile Include="Assets\Scripts\Player\Towers\Tower.cs" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.17f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
