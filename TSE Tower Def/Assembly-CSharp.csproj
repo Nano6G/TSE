@@ -75,7 +75,6 @@
     <Compile Include="Assets\Scripts\Enemies\WaypointsScript.cs" />
     <Compile Include="Assets\Scripts\Manager.cs" />
     <Compile Include="Assets\Scripts\Player\BasicProjectile.cs" />
-    <Compile Include="Assets\Scripts\Player\TowerScriptableObject.cs" />
     <Compile Include="Assets\Scripts\Player\Towers\BaseTowerScript.cs" />
     <Compile Include="Assets\Scripts\Player\Towers\Tower.cs" />
     <Reference Include="UnityEngine">

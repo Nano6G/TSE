@@ -34,13 +34,7 @@ public class BaseTowerScript : MonoBehaviour
         sprite = GetComponent<SpriteRenderer>();
         firePoint = transform.GetChild(0);
     }
-    public void SetAll(TowerScriptableObject statsIn)
-    {
-        range = statsIn.range;
-        damage = statsIn.damage;
-        sprite.sprite = statsIn.sprite;
-        projectile = statsIn.projectile;
-    }
+
     void UpdateTarget()
     {
         //check all objects in game tagged with "Enemy"

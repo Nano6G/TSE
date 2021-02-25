@@ -83,10 +83,8 @@ public class BasicProjectile : MonoBehaviour
         //damage all objects
         foreach (Collider2D collider in hitObjs)
         {
-            Debug.Log("Detected");
             if (collider.transform.tag == "Enemy")
             {
-                Debug.Log("Hit thing");
                 Hit(collider.gameObject);
             }
         }

@@ -42,7 +42,6 @@ public class EnemyScript : MonoBehaviour
         }
         if (health <= 0)
         {
-            Debug.Log("Destroyed");
             Destroy(gameObject);
         }
     }
