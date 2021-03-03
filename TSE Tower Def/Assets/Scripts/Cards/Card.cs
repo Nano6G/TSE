@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class Card : MonoBehaviour
 {
     Manager manager;
+
     int cardType;
     [Header("Fields")]
     public Text cardName;
@@ -16,6 +17,10 @@ public class Card : MonoBehaviour
     public BaseCard cardData;
 
     GameObject ObjectIn;
+    bool selected = false;
+
+    //maybe have a list of empties to hold the transform of card spots
+    Vector2 startPos;
 
     // Start is called before the first frame update
     void Start()
@@ -25,37 +30,45 @@ public class Card : MonoBehaviour
         cardNameVal = cardData.CardName;
         cardName.text = cardNameVal;
         cardCost.text = cardCostVal.ToString();
+        startPos = transform.position;
     }
 
-    private void OnMouseOver()
+    private void OnMouseEnter()
     {
-        GetComponent<SpriteRenderer>().color = Color.yellow;
+        highlight();
     }
     private void OnMouseExit()
     {
+
+        Lower();
         GetComponent<SpriteRenderer>().color = Color.grey;
     }
     private void OnMouseDown()
     {
+        //error checking to ensure there is data in the card
         if(cardData.ObjectToMake != null)
         {
-            manager.setSelection(cardData.ObjectToMake);
+            if (manager.CurrencyAvailable >= cardCostVal)
+            {
+                manager.TowerCost = cardCostVal;
+                manager.setSelection(cardData.ObjectToMake);
+                selected = true;
+            }
         }
-        Debug.Log("ClickedCard!");
+    }
 
-        /*
-        switch (cardType)
-        {   
-            //TOWER
-            case 1:
-                //SET TOWER
-                break;
-            //UPGRADE
-            case 2:
-                //SET UPGRADE
-                break;
-            //SPELL
-        }
-        */
+    void highlight()
+    {
+        Raise();
+        GetComponent<SpriteRenderer>().color = Color.yellow;
+    }
+    //Highlighting mechanics
+    private void Raise()
+    {
+        transform.position = new Vector2(transform.position.x, transform.position.y + .1f);
+    }
+    void Lower()
+    {
+        transform.position = startPos;
     }
 }

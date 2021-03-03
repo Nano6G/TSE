@@ -9,13 +9,18 @@ public class Manager: MonoBehaviour
     //Towers
     GameObject towerBase;
     public GameObject selectedTower;
+    int towerCost = 0;
+    public int TowerCost
+    {
+        set { towerCost = value; }
+    }
 
     //Currency
-    private int currency1;
-    public int Currency1 
+    private int currencyAvailable;
+    public int CurrencyAvailable 
     { 
-        get { return currency1; }
-        set { currency1 = value; } 
+        get { return currencyAvailable; }
+        set { towerCost = value; } 
     }
     public Text currencyText;
     float CurrTimerMax = 5f, CurrTimer;
@@ -34,10 +39,9 @@ public class Manager: MonoBehaviour
             UpdateCurrency(1);
             CurrTimer = CurrTimerMax;
         }
-        currencyText.text = Currency1.ToString();
+        currencyText.text = CurrencyAvailable.ToString();
         mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
-        //temporary code to place a tower at mouse position, tower has no function yet
         if (Input.GetMouseButtonDown(0))
         {
             //for FREE PLACEMENT
@@ -62,10 +66,11 @@ public class Manager: MonoBehaviour
 
         }
     }
+    //Update currency by the amount input
     public void UpdateCurrency(int amount)
     {
-        currency1 += amount;
-        currencyText.text = currency1.ToString();
+        currencyAvailable += amount;
+        currencyText.text = currencyAvailable.ToString();
     }
     public void setSelection(GameObject towerin)
     {
@@ -78,6 +83,7 @@ public class Manager: MonoBehaviour
     //    return(Physics2D.OverlapBox(mousePos, new Vector2(1,1), 0));
     //}
 
+    //checks layers 1 - 9 for collisions
     Transform CheckArea()
     {
        Collider2D other = Physics2D.OverlapBox(mousePos, new Vector2(1, 1), 0, 1 << 9);
@@ -85,6 +91,7 @@ public class Manager: MonoBehaviour
             return other.transform;
         else return null;
     }
+    //Simple coroutine to constantly update income, could alter the repeatrate with spells maybe?
     IEnumerator UpdateCurrencyRepeat(float repeatRate)
     {
         UpdateCurrency(1);
