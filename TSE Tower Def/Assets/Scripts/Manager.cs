@@ -7,8 +7,11 @@ public class Manager: MonoBehaviour
 {
     Vector2 mousePos;
     //Towers
-    GameObject towerBase;
     public GameObject selectedTower;
+    public GameObject selectedCard;
+
+    CardManager cardManager;
+
     int towerCost = 0;
     public int TowerCost
     {
@@ -27,6 +30,7 @@ public class Manager: MonoBehaviour
 
     private void Start()
     {
+        cardManager = GetComponent<CardManager>();
         //currencyText = transform.Find("Currency1").GetComponent<Text>();
         StartCoroutine(UpdateCurrencyRepeat(2));
     }
@@ -44,23 +48,12 @@ public class Manager: MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
-            //for FREE PLACEMENT
-            //if (checkArea() == false && selectedTower != null)
-            //{
-            //    GameObject PlacedTower = Instantiate(selectedTower, mousePos, transform.rotation);
-            //    selectedTower = null;
-            //}
-            //else if (checkArea() == true && selectedTower != null)
-            //{
-            //    selectedTower = null;
-            //}
-
-
             //for SET PLACEMENT 
             if (CheckArea() != null && selectedTower != null)
             { 
                 GameObject PlacedTower = Instantiate(selectedTower, CheckArea().position, transform.rotation);
                 selectedTower = null;
+                cardManager.RemoveCard(selectedCard);
             }
             //Maybe change to click a placement zone and then highlight usable cards?
 
@@ -77,18 +70,18 @@ public class Manager: MonoBehaviour
         selectedTower = towerin;
     }
 
-    //bool checkArea()
-    //{
-    //    //Checks to see if colliding with ANYTHING
-    //    return(Physics2D.OverlapBox(mousePos, new Vector2(1,1), 0));
-    //}
-
     //checks layers 1 - 9 for collisions
     Transform CheckArea()
     {
-       Collider2D other = Physics2D.OverlapBox(mousePos, new Vector2(1, 1), 0, 1 << 9);
-        if (other != null)
-            return other.transform;
+        //Check if there is already a tower
+        if (Physics2D.OverlapBox(mousePos, new Vector2(1, 1), 0,LayerMask.GetMask("Tower")) == false)
+        {
+            Collider2D other = Physics2D.OverlapBox(mousePos, new Vector2(1, 1), 0, 1 << 9);
+            if (other != null)
+                return other.transform;
+
+            else return null;
+        }
         else return null;
     }
     //Simple coroutine to constantly update income, could alter the repeatrate with spells maybe?

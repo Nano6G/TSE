@@ -43,7 +43,7 @@ public class WaveSpawner : MonoBehaviour
         if (waveNumber < waves.Length - 1)
             waveNumber++;
         else
-            //End of wave
-            Debug.Log("Done");
+        //End of wave
+        { }
     }
 }

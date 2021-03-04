@@ -6,10 +6,10 @@ using UnityEngine;
 public class BaseCard : ScriptableObject
 {
     [Header("Card")]
-    public string CardName;
-    public string CardDescription;
-    public Sprite CardSprite;
+    public string cardName;
+    public string cardDescription;
+    public Sprite cardSprite;
     [Header("Standard Stats")]
-    public int Cost;
-    public GameObject ObjectToMake;
+    public int cost;
+    public GameObject objectToMake;
 }

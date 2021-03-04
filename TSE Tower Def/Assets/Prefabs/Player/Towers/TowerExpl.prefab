@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2123172865}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FirePoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42,8 +42,8 @@ GameObject:
   - component: {fileID: 5891957619812276345}
   - component: {fileID: 1335178616}
   - component: {fileID: 5698656611023425539}
-  m_Layer: 0
-  m_Name: Tower
+  m_Layer: 8
+  m_Name: TowerExpl
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

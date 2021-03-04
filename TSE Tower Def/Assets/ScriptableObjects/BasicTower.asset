@@ -12,10 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cedff85260b40b7429c2e0b0b52b9ad3, type: 3}
   m_Name: BasicTower
   m_EditorClassIdentifier: 
-  CardName: Basic Tower
-  CardDescription: Tower that shoot thing.
-  CardSprite: {fileID: 0}
-  Cost: 1
-  ObjectToMake: {fileID: 6541474546493421515, guid: 65e6ff6226e4bfb4989bba6e04374cac,
+  cardName: Basic Tower
+  cardDescription: Tower shoot
+  cardSprite: {fileID: 0}
+  cost: 2
+  objectToMake: {fileID: 6541474546493421515, guid: 65e6ff6226e4bfb4989bba6e04374cac,
     type: 3}
-  Tower: {fileID: 6541474546493421515, guid: 65e6ff6226e4bfb4989bba6e04374cac, type: 3}

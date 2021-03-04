@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cedff85260b40b7429c2e0b0b52b9ad3, type: 3}
   m_Name: ExplodeTower
   m_EditorClassIdentifier: 
-  CardName: Explode Tower
-  CardDescription: Tower that shoot thing and thing go boom
-  CardSprite: {fileID: 0}
-  Cost: 5
-  ObjectToMake: {fileID: 0}
-  Tower: {fileID: 8356354066627503710, guid: 10c34a379b73cda4c86769580fea681b, type: 3}
+  cardName: Explosive Tower
+  cardDescription: Tower shoot boom
+  cardSprite: {fileID: 0}
+  cost: 5
+  objectToMake: {fileID: 8356354066627503710, guid: 10c34a379b73cda4c86769580fea681b,
+    type: 3}
