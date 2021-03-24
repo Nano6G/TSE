@@ -92,8 +92,7 @@ public class CardManager : MonoBehaviour
                             break;
                         }
                     }
-
-                    Debug.Log("Hand size: " + hand.Count);
+                    //Debug.Log("Hand size: " + hand.Count);
                 }
             }
         }
@@ -107,7 +106,7 @@ public class CardManager : MonoBehaviour
     //Check for empty spots in hand array
     HandItem CheckHandSpots()
     {
-        for (int i = 0; i < handSpots.Length-1; i++)
+        for (int i = 0; i < handSpots.Length; i++)
         {
             if (handSpots[i].occupied == false)
                 return handSpots[i];

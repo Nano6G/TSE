@@ -7,11 +7,14 @@ using UnityEngine.UI;
 public class EnemyScript : MonoBehaviour
 {
     [SerializeField]
-    private float speed = 5f, health, MaxHealth = 1;
+    private float speed = 5f, health, MaxHealth = 1, value = 1;
 
     private Transform target;
     //where on path the enemy is
     private int wavePoint;
+
+    private GameObject manager;
+    private Manager managerScript;
 
     [Header("UI")]
     public Image healthBar;
@@ -24,6 +27,9 @@ public class EnemyScript : MonoBehaviour
     }
     void Start()
     {
+        manager = GameObject.Find("Manager");
+        managerScript = manager.GetComponent<Manager>();
+
         health = MaxHealth;
         target = WaypointsScript.points[0];
     }
@@ -42,6 +48,7 @@ public class EnemyScript : MonoBehaviour
         }
         if (health <= 0)
         {
+            managerScript.UpdateCurrency(1);
             Destroy(gameObject);
         }
     }

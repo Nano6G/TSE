@@ -621,8 +621,14 @@
     <Reference Include="Unity.VSCode.Editor">
       <HintPath>D:/_PROJECTS/4.University/TSE Tower Def/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.VectorGraphics">
+      <HintPath>D:/_PROJECTS/4.University/TSE Tower Def/Library/ScriptAssemblies/Unity.VectorGraphics.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.2D.SpriteShape.Editor">
       <HintPath>D:/_PROJECTS/4.University/TSE Tower Def/Library/ScriptAssemblies/Unity.2D.SpriteShape.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.InternalAPIEditorBridge.003">
+      <HintPath>D:/_PROJECTS/4.University/TSE Tower Def/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.003.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>D:/_PROJECTS/4.University/TSE Tower Def/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
@@ -647,6 +653,9 @@
     </Reference>
     <Reference Include="Unity.Rider.Editor">
       <HintPath>D:/_PROJECTS/4.University/TSE Tower Def/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VectorGraphics.Editor">
+      <HintPath>D:/_PROJECTS/4.University/TSE Tower Def/Library/ScriptAssemblies/Unity.VectorGraphics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Mathematics">
       <HintPath>D:/_PROJECTS/4.University/TSE Tower Def/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
@@ -675,6 +684,9 @@
     <Reference Include="Unity.2D.Animation.Editor">
       <HintPath>D:/_PROJECTS/4.University/TSE Tower Def/Library/ScriptAssemblies/Unity.2D.Animation.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.InternalAPIEngineBridge.003">
+      <HintPath>D:/_PROJECTS/4.University/TSE Tower Def/Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.003.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Mathematics.Editor">
       <HintPath>D:/_PROJECTS/4.University/TSE Tower Def/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
     </Reference>
@@ -689,18 +701,6 @@
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>D:/_PROJECTS/4.University/TSE Tower Def/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VectorGraphics">
-      <HintPath>D:/_PROJECTS/4.University/TSE Tower Def/Library/ScriptAssemblies/Unity.VectorGraphics.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.InternalAPIEditorBridge.003">
-      <HintPath>D:/_PROJECTS/4.University/TSE Tower Def/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.003.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VectorGraphics.Editor">
-      <HintPath>D:/_PROJECTS/4.University/TSE Tower Def/Library/ScriptAssemblies/Unity.VectorGraphics.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.InternalAPIEngineBridge.003">
-      <HintPath>D:/_PROJECTS/4.University/TSE Tower Def/Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.003.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup></ItemGroup>

@@ -62,6 +62,7 @@ public class Tower : MonoBehaviour
         //if (target = null)
         //    return;
         //rotate to shoot at target, depending on sprites implemented we can alter this to rotate a sprite or jsut point to change fire direction
+
         if (target != null)
         {
             Vector3 dir = target.position - transform.position;
@@ -79,10 +80,12 @@ public class Tower : MonoBehaviour
     }
     void Shoot()
     {
+        //Create a projectile and assign fields
         GameObject projectileObject = Instantiate(projectile, firePoint.position, firePoint.rotation);
         BasicProjectile projectileScript = projectileObject.GetComponent<BasicProjectile>();
         if (projectileScript != null)
         {
+            //assign damage from tower
             projectileScript.Dmg = damage;
             projectileScript.Seek(target.transform);
         }

@@ -25,8 +25,10 @@ public class Manager: MonoBehaviour
         get { return currencyAvailable; }
         set { towerCost = value; } 
     }
+
+    private int currencyAvailable;
     public Text currencyText;
-    float CurrTimerMax = 5f, CurrTimer;
+    float currTimerMax = 5f, currTimer;
 
     private void Start()
     {
@@ -37,11 +39,11 @@ public class Manager: MonoBehaviour
 
     void Update()
     {
-        CurrTimer -= Time.deltaTime;
-        if (CurrTimer < 0)
+        currTimer -= Time.deltaTime;
+        if (currTimer < 0)
         {
             UpdateCurrency(1);
-            CurrTimer = CurrTimerMax;
+            currTimer = currTimerMax;
         }
         currencyText.text = CurrencyAvailable.ToString();
         mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -59,12 +61,20 @@ public class Manager: MonoBehaviour
 
         }
     }
+
     //Update currency by the amount input
     public void UpdateCurrency(int amount)
     {
         currencyAvailable += amount;
         currencyText.text = currencyAvailable.ToString();
     }
+
+    public void UpdateHealth(int amount)
+    {
+         += amount;
+         = currencyAvailable.ToString();
+    }
+
     public void setSelection(GameObject towerin)
     {
         selectedTower = towerin;

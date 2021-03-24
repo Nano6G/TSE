@@ -6,5 +6,5 @@ using UnityEngine;
 public class TowerCardScriptableObject : BaseCard
 {
     [Header("TowerCard")]
-    int placeholder = 1;
+    int placeholder;
 }

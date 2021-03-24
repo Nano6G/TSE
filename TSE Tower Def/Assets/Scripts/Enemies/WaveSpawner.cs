@@ -25,16 +25,17 @@ public class WaveSpawner : MonoBehaviour
 
     IEnumerator SpawnWave()
     {
-        //messy system until i can work out how to assign the number to spawn under the enemy, but it works for now
+        //Select each enemy
         for (int i = 0; i < waves[waveNumber].enemies.Length; i++)
         {
+            //Spawn the current enemy 
             for (int j = 0; j < waves[waveNumber].numToSpawn[i]; j++)
             {
                 // Create a single enemy and assign values
                 GameObject spawned = Instantiate(enemyList[0].gameObject, transform.position, transform.rotation);
-                // Lots of public variables, should be made into GET:SET for oop
+                // Lots of public variables, could be made into GET:SET for oop
                 spawned.GetComponent<EnemyScript>().assignStats(waves[i].enemies[i].speed, waves[i].enemies[i].health, waves[i].enemies[i].sprite);
-                // Pause before next enemy, necessary to stop too muhv overlap
+                // Pause before next enemy, necessary to prevent too much overlap
                 yield return new WaitForSeconds(.3f);
             }
         }
@@ -44,6 +45,8 @@ public class WaveSpawner : MonoBehaviour
             waveNumber++;
         else
         //End of wave
-        { }
+        {
+            Debug.Log("Wave over!");
+        }
     }
 }

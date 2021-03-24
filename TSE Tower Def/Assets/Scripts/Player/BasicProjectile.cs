@@ -63,6 +63,7 @@ public class BasicProjectile : MonoBehaviour
         else
             Hit(target.gameObject);
     }
+
     void Hit(GameObject EnemyHit)
     {
         //Apply damage here
