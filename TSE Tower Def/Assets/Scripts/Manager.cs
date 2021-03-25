@@ -26,7 +26,6 @@ public class Manager: MonoBehaviour
         set { towerCost = value; } 
     }
 
-    private int currencyAvailable;
     public Text currencyText;
     float currTimerMax = 5f, currTimer;
 
@@ -69,11 +68,6 @@ public class Manager: MonoBehaviour
         currencyText.text = currencyAvailable.ToString();
     }
 
-    public void UpdateHealth(int amount)
-    {
-         += amount;
-         = currencyAvailable.ToString();
-    }
 
     public void setSelection(GameObject towerin)
     {
