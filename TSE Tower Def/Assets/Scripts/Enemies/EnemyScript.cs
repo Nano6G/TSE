@@ -15,18 +15,20 @@ public class EnemyScript : MonoBehaviour
 
     private GameObject manager;
     private Manager managerScript;
-    private Animator animator;
+    private RuntimeAnimatorController animator;
     
     [Header("UI")]
     public Image healthBar;
 
     //should be called before fully spawned
-    public void assignStats(float speedin, float healthin, Sprite spritein, Animator clipin)
+    public void assignStats(float speedin, float healthin, Sprite spritein, RuntimeAnimatorController controller)
     {
         speed = speedin; MaxHealth = healthin; GetComponent<SpriteRenderer>().sprite = spritein;
         health = MaxHealth;
-        animator = GetComponent<Animator>();
-        animator = clipin;
+
+        animator = GetComponent<Animator>().runtimeAnimatorController;
+        animator = controller;
+        GetComponent<Animator>().runtimeAnimatorController = controller;
     }
     void Start()
     {

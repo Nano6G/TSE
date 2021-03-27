@@ -8,6 +8,7 @@ public class EnemyScriptableObject : ScriptableObject
 {
     // enemy stats, can be built on but currently very basic
     public float speed, health;
+
     public Sprite sprite;
-    public Animator anim;
+    public RuntimeAnimatorController anim;
 }

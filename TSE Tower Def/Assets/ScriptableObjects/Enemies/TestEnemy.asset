@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ff707ecc1a986b49b4d4994ce7617c3, type: 3}
   m_Name: TestEnemy
   m_EditorClassIdentifier: 
-  speed: 2
+  speed: 1
   health: 5
   sprite: {fileID: 0}
-  anim: {fileID: 0}
+  anim: {fileID: 9100000, guid: e5aa3cadbc0963c4cb221c5953a2186f, type: 2}

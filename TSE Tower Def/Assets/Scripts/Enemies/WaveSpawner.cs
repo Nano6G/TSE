@@ -36,7 +36,7 @@ public class WaveSpawner : MonoBehaviour
                 // Lots of public variables, could be made into GET:SET for oop
                 spawned.GetComponent<EnemyScript>().assignStats(waves[i].enemies[i].speed, waves[i].enemies[i].health, waves[i].enemies[i].sprite, waves[i].enemies[i].anim);
                 // Pause before next enemy, necessary to prevent too much overlap
-                yield return new WaitForSeconds(.3f);
+                yield return new WaitForSeconds(.5f);
             }
         }
 
