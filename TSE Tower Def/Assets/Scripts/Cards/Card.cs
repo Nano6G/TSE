@@ -49,8 +49,8 @@ public class Card : MonoBehaviour
         {
             if (manager.CurrencyAvailable >= cardCostVal)
             {
-                manager.TowerCost = cardCostVal;
-                manager.setSelection(cardData.objectToMake);
+                manager.CardCost = cardCostVal;
+                manager.setSelection(cardData.objectToMake, cardData.type);
                 manager.selectedCard = this.gameObject;
             }
         }

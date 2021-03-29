@@ -67,6 +67,7 @@
     <Compile Include="Assets\Scripts\CardManager.cs" />
     <Compile Include="Assets\Scripts\Cards\BaseCard.cs" />
     <Compile Include="Assets\Scripts\Cards\Card.cs" />
+    <Compile Include="Assets\Scripts\Cards\SpellScriptableObject.cs" />
     <Compile Include="Assets\Scripts\Cards\TowerCardScriptableObject.cs" />
     <Compile Include="Assets\Scripts\Enemies\EnemyScript.cs" />
     <Compile Include="Assets\Scripts\Enemies\EnemyScriptableObject.cs" />
@@ -76,6 +77,8 @@
     <Compile Include="Assets\Scripts\Enemies\WaypointsScript.cs" />
     <Compile Include="Assets\Scripts\Manager.cs" />
     <Compile Include="Assets\Scripts\Player\BasicProjectile.cs" />
+    <Compile Include="Assets\Scripts\Player\Spells\BaseSpell.cs" />
+    <Compile Include="Assets\Scripts\Player\Spells\FreezeSpell.cs" />
     <Compile Include="Assets\Scripts\Player\Towers\BaseTowerScript.cs" />
     <Compile Include="Assets\Scripts\Player\Towers\Tower.cs" />
     <Reference Include="UnityEngine">

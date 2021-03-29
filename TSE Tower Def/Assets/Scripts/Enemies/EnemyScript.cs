@@ -13,6 +13,9 @@ public class EnemyScript : MonoBehaviour
     //where on path the enemy is
     private int wavePoint;
 
+    private float frozenTimer = 0f;
+    private bool moving;
+
     private GameObject manager;
     private Manager managerScript;
     private RuntimeAnimatorController animator;
@@ -41,21 +44,30 @@ public class EnemyScript : MonoBehaviour
 
     private void Update()
     {
-        //direction to move
-        Vector2 dir = target.position - transform.position;
-
-        //move towards target, normalized fixes size so speed doesnt change
-        transform.Translate(dir.normalized * speed * Time.deltaTime, Space.World);
-
-        if (Vector2.Distance(transform.position, target.position) <= .3f)
+        if (frozenTimer <= 0)
         {
-            GetNextWayPoint();
+            //direction to move
+            Vector2 dir = target.position - transform.position;
+
+            //move towards target, normalized fixes size so speed doesnt change
+            transform.Translate(dir.normalized * speed * Time.deltaTime, Space.World);
+
+            if (Vector2.Distance(transform.position, target.position) <= .3f)
+            {
+                GetNextWayPoint();
+            }
+        }
+        else
+        {
+            Debug.Log("FROZEN");
+            frozenTimer -= 1 * Time.deltaTime;
         }
         if (health <= 0)
         {
             managerScript.UpdateCurrency(1);
             Destroy(gameObject);
         }
+
     }
 
     public void GetHit(float PhysDmg)
@@ -71,9 +83,15 @@ public class EnemyScript : MonoBehaviour
         if (wavePoint >= WaypointsScript.points.Length-1)
         {
             Destroy(gameObject);
+            managerScript.ChangeHealth(-1);
             return;
         }
         wavePoint++;
         target = WaypointsScript.points[wavePoint];
+    }
+
+    public void Frozen(float timeFrozen)
+    {
+        frozenTimer += timeFrozen;
     }
 }

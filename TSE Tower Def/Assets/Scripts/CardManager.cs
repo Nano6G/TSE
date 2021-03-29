@@ -49,7 +49,7 @@ public class CardManager : MonoBehaviour
         DrawCard();
         DrawCard();
 
-        Debug.Log(handSpots[1].occupied);
+        //Debug.Log(handSpots[1].occupied);
     }
 
     void CreateHand(int handSize)

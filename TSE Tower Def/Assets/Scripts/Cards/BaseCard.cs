@@ -11,5 +11,6 @@ public class BaseCard : ScriptableObject
     public Sprite cardSprite;
     [Header("Standard Stats")]
     public int cost;
+    public string type;
     public GameObject objectToMake;
 }
