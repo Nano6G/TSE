@@ -16,7 +16,7 @@ MonoBehaviour:
   cardDescription: Charges up to 3 shots for quick fire!
   cardSprite: {fileID: 0}
   ghost: {fileID: 21300000, guid: 9f05bc0f144b7ce4f9e4ebabb09391ae, type: 3}
-  cost: 4
+  cost: 400
   type: T
   objectToMake: {fileID: 6541474546493421515, guid: e1afd268f878a4a43bfa12e216e19f67,
     type: 3}

@@ -16,7 +16,7 @@ MonoBehaviour:
   cardDescription: Blast the enemy every 2s
   cardSprite: {fileID: 0}
   ghost: {fileID: 21300000, guid: 60f72befab0d5c9478770d3e77d7bed2, type: 3}
-  cost: 4
+  cost: 350
   type: S
   objectToMake: {fileID: 5722192655833897712, guid: 9c02262a1e4402b4596ea6e035e1f7e5,
     type: 3}

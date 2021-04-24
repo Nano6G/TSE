@@ -10,8 +10,8 @@ public class WaveSpawner : MonoBehaviour
     //stores the waves
     public WaveScriptableObject[] waves;
 
-    float timeForWave = 5f, countdown = 2f;
-    bool LevelOver;
+    float timeForWave = 10f, countdown = 2f;
+    bool LevelOver, countingdown = true;
     private int waveNumber = 0;
 
     void Update()
@@ -22,13 +22,15 @@ public class WaveSpawner : MonoBehaviour
             {
                 StartCoroutine(SpawnWave());
                 countdown = timeForWave;
+                countingdown = false;
             }
             else if (waveNumber >= waves.Length && enemyCount == 0)
             {
                 GetComponentInParent<Manager>().WinEvent();
                 LevelOver = true;
             }
-            countdown -= Time.deltaTime;
+            if(countingdown)
+                countdown -= Time.deltaTime;
         }
     }
 
@@ -43,13 +45,13 @@ public class WaveSpawner : MonoBehaviour
                 // Create a single enemy and assign values
                 GameObject spawned = Instantiate(enemyList[0].gameObject, transform.position, transform.rotation);
                 // Lots of public variables, could be made into GET:SET for oop
-                spawned.GetComponent<EnemyScript>().assignStats(waves[i].wave[i].enemy.speed, waves[i].wave[i].enemy.health, waves[i].wave[i].enemy.sprite, waves[i].wave[i].enemy.anim);
+                spawned.GetComponent<EnemyScript>().assignStats(waves[i].wave[i].enemy.speed, waves[i].wave[i].enemy.health, waves[i].wave[i].enemy.value, waves[i].wave[i].enemy.sprite, waves[i].wave[i].enemy.anim);
                 enemyCount++;
                 // Pause before next enemy, necessary to prevent too much overlap
                 yield return new WaitForSeconds(.5f);
-
             }
         }
+        countingdown = true;
         //End of wave
         Debug.Log("Wave over!");
         waveNumber++;

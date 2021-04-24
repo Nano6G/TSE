@@ -13,7 +13,7 @@ public class SpecialTower : Tower
 
     protected override void Update()
     {
-        if (Shots.Count < 3)
+        if (Shots.Count < maxShots)
         {
             if (fireTimer <= 0 && target != null)
             { Shoot(); }
@@ -28,23 +28,23 @@ public class SpecialTower : Tower
             StartCoroutine("ChargeShot");
             charging = true;
             chargeTimer = chargeTimeMax;
-            Debug.Log("TIMER");
         }
         fireTimer -= Time.deltaTime;
     }
     void makeShot()
     {
-        GameObject projectileObject = Instantiate(projectile, new Vector2(firePoint.position.x + Shots.Count * 0.5f, firePoint.position.y), firePoint.rotation);
+        int yoffset = 0;
+        if (Shots.Count > 3)
+            yoffset = 1;
+        GameObject projectileObject = Instantiate(projectile, new Vector2(firePoint.position.x + Shots.Count * 0.5f, firePoint.position.y + yoffset), firePoint.rotation);
         Shots.Add(projectileObject);
         charging = false;
-        Debug.Log("MakeShot");
     }
     protected override void Shoot()
     {
 
         if (Shots.Count > 0)
         {
-            Debug.Log("Shot");
             ChargedProjectile projectileScript = Shots[0].GetComponent<ChargedProjectile>();
             if (projectileScript != null)
             {

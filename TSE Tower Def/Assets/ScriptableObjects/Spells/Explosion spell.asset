@@ -16,7 +16,7 @@ MonoBehaviour:
   cardDescription: bombs or magic?
   cardSprite: {fileID: 21300000, guid: 60f72befab0d5c9478770d3e77d7bed2, type: 3}
   ghost: {fileID: 21300000, guid: 60f72befab0d5c9478770d3e77d7bed2, type: 3}
-  cost: 4
+  cost: 450
   type: S
   objectToMake: {fileID: 5722192655833897712, guid: efb00b1601d28bd48abdd3f8457ea97b,
     type: 3}

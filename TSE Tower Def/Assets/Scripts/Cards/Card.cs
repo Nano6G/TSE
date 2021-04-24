@@ -49,16 +49,13 @@ public class Card : MonoBehaviour
     private void OnMouseDown()
     {
         //error checking to ensure there is data in the card
-        if(cardData.objectToMake != null)
+        if (cardData.objectToMake != null)
         {
-            if (manager.CurrencyAvailable >= cardCostVal)
-            {
-                manager.CardCost = cardCostVal;
-                manager.selectedGhost = ghost;
-                manager.setSelection(cardData.objectToMake, cardData.type, ghost, cardEffectRadius);
-                //Debug.Log("Card Rad = " + cardEffectRadius);
-                manager.selectedCard = this.gameObject;
-            }
+            manager.CardCost = cardCostVal;
+            manager.selectedGhost = ghost;
+            manager.setSelection(cardData.objectToMake, cardData.type, ghost, cardEffectRadius);
+            //Debug.Log("Card Rad = " + cardEffectRadius);
+            manager.selectedCard = this.gameObject;
         }
     }
 

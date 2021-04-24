@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Tower : MonoBehaviour
 {
@@ -16,6 +17,8 @@ public class Tower : MonoBehaviour
     protected float fireTimer = 0f;
     [SerializeField]
     protected float range = 3;
+    [SerializeField]
+    protected GameObject TowerCard;
 
 
     [Header("Unity Reqs")]
@@ -90,5 +93,18 @@ public class Tower : MonoBehaviour
             projectileScript.Seek(target.transform);
         }
         fireTimer = 1f / fireRate;
+    }
+
+    private void OnMouseDown()
+    {
+        Debug.Log("Clicked");
+        if (TowerCard != null && !TowerCard.activeSelf)
+        {
+            TowerCard.SetActive(true);
+            TowerCard.transform.Find("number holder").transform.Find("DAMAGE").GetComponent<Text>().text = damage.ToString();
+            TowerCard.transform.Find("number holder").transform.Find("FIRERATE").GetComponent<Text>().text = fireRate.ToString();
+        }
+        else if (TowerCard != null && TowerCard.activeSelf)
+            TowerCard.SetActive(false);
     }
 }

@@ -38,10 +38,12 @@ public class CardManager : MonoBehaviour
     //ARRAYS FOR HAND
     public HandItem[] handSpots;
     public GameObject[] handArr;
+    Manager manager;
     //---------------------------------//
 
     private void Start()
     {
+        manager = gameObject.GetComponent<Manager>();
         shuffle();
         CreateHand(5);
 
@@ -62,7 +64,14 @@ public class CardManager : MonoBehaviour
             handSpots[i] = handItem;
         }
     }
-
+    public void DrawCardButton()
+    {
+        if (manager.CurrencyAvailable > 300)
+        {
+            DrawCard();
+            manager.UpdateCurrency(-300);
+        }
+    }
     //draw a card from a deck into the hand
     public void DrawCard()
     {

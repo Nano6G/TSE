@@ -24,9 +24,9 @@ public class EnemyScript : MonoBehaviour
     public Image healthBar;
 
     //should be called before fully spawned
-    public void assignStats(float speedin, float healthin, Sprite spritein, RuntimeAnimatorController controller)
+    public void assignStats(float speedin, float healthin, int valuein, Sprite spritein, RuntimeAnimatorController controller)
     {
-        speed = speedin; MaxHealth = healthin; GetComponent<SpriteRenderer>().sprite = spritein;
+        speed = speedin; MaxHealth = healthin; GetComponent<SpriteRenderer>().sprite = spritein; value = valuein;
         health = MaxHealth;
 
         animator = GetComponent<Animator>().runtimeAnimatorController;
@@ -84,7 +84,7 @@ public class EnemyScript : MonoBehaviour
         //has reached player base, add a function for damaging player
         if (wavePoint >= WaypointsScript.points.Length-1)
         {       
-            managerScript.ChangeHealth(-1);
+            managerScript.UpdateHealth(-1);
             manager.GetComponentInChildren<WaveSpawner>().enemyCount--;
             Destroy(gameObject);
             return;

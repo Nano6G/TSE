@@ -4,11 +4,13 @@ ScriptsOnlyBuild:
     - BasicProjectile
     - Card
     - CardManager
+    - ChargedProjectile
     - EnemyScript
     - EnemyScriptableObject
     - ExplosionSpell
     - FreezeSpell
     - Manager
+    - SpecialTower
     - SpellScriptableObject
     - Tower
     - TowerCardScriptableObject
@@ -82,53 +84,57 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 602}
     - Class: 114
-      Script: {instanceID: 11256}
+      Script: {instanceID: 11304}
     - Class: 114
-      Script: {instanceID: 11280}
+      Script: {instanceID: 11354}
     - Class: 114
-      Script: {instanceID: 11368}
+      Script: {instanceID: 11394}
     - Class: 114
-      Script: {instanceID: 11464}
+      Script: {instanceID: 11490}
     - Class: 114
-      Script: {instanceID: 11586}
+      Script: {instanceID: 11612}
     - Class: 114
-      Script: {instanceID: 11642}
+      Script: {instanceID: 11668}
     - Class: 114
-      Script: {instanceID: 11676}
+      Script: {instanceID: 11702}
     - Class: 114
-      Script: {instanceID: 11746}
+      Script: {instanceID: 11772}
     - Class: 114
-      Script: {instanceID: 11862}
+      Script: {instanceID: 11888}
     - Class: 114
-      Script: {instanceID: 12040}
+      Script: {instanceID: 12066}
     - Class: 114
-      Script: {instanceID: 12320}
+      Script: {instanceID: 12346}
     - Class: 114
-      Script: {instanceID: 12338}
+      Script: {instanceID: 12364}
     - Class: 114
-      Script: {instanceID: 12468}
+      Script: {instanceID: 12494}
     - Class: 114
-      Script: {instanceID: 12580}
+      Script: {instanceID: 12606}
     - Class: 114
-      Script: {instanceID: 12628}
+      Script: {instanceID: 12654}
     - Class: 114
-      Script: {instanceID: 12736}
+      Script: {instanceID: 12762}
     - Class: 114
-      Script: {instanceID: 13020}
+      Script: {instanceID: 13046}
     - Class: 114
-      Script: {instanceID: 13048}
+      Script: {instanceID: 13074}
     - Class: 114
-      Script: {instanceID: 13106}
+      Script: {instanceID: 13132}
     - Class: 114
-      Script: {instanceID: 13438}
+      Script: {instanceID: 13464}
     - Class: 114
-      Script: {instanceID: 13832}
+      Script: {instanceID: 13858}
     - Class: 114
-      Script: {instanceID: 13906}
+      Script: {instanceID: 13864}
     - Class: 114
-      Script: {instanceID: 13950}
+      Script: {instanceID: 13934}
     - Class: 114
-      Script: {instanceID: 14476}
+      Script: {instanceID: 13978}
+    - Class: 114
+      Script: {instanceID: 14122}
+    - Class: 114
+      Script: {instanceID: 14506}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -158,12 +164,6 @@ ScriptsOnlyBuild:
   scriptHashData:
   - hash:
       serializedVersion: 2
-      Hash: ae83e830e7a90c0aff918c4c2e520825
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: GraphicRaycaster
-  - hash:
-      serializedVersion: 2
       Hash: 4bc4346a71a8df53a6b106f68ef3a190
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -174,6 +174,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_SelectionCaret
+  - hash:
+      serializedVersion: 2
+      Hash: 810fe9360ca0252cfd0d70e9d6f50d57
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SpecialTower
   - hash:
       serializedVersion: 2
       Hash: 87ff43d2baf3385cba327d8f803a4ebb
@@ -440,7 +446,7 @@ ScriptsOnlyBuild:
     className: Selectable
   - hash:
       serializedVersion: 2
-      Hash: ba3b192218d6c47751226b774f04dabf
+      Hash: f4e7178f16c53166804ed818b463933d
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Tower
@@ -620,10 +626,16 @@ ScriptsOnlyBuild:
     className: AudioTrack
   - hash:
       serializedVersion: 2
-      Hash: 4bcb48a0d53e0ca487176829719ba3bf
+      Hash: 4b01129aa831677b7122b082b7bb8625
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: BasicProjectile
+  - hash:
+      serializedVersion: 2
+      Hash: ae83e830e7a90c0aff918c4c2e520825
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: GraphicRaycaster
   - hash:
       serializedVersion: 2
       Hash: 8e6ceabfd38a184413d69b7db56c89cc
@@ -648,6 +660,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: MarkerTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 461fab9700c7eaeba04cb1bead853010
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ChargedProjectile
   - hash:
       serializedVersion: 2
       Hash: d791aa6007fa3640be1164ea75bb087d

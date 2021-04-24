@@ -14,5 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 1
   health: 5
+  value: 10
   sprite: {fileID: 0}
   anim: {fileID: 9100000, guid: e5aa3cadbc0963c4cb221c5953a2186f, type: 2}
