@@ -10,7 +10,9 @@ public class Card : MonoBehaviour
     [Header("Fields")]
     public Text cardName;
     public Text cardCost;
-    public Text CardType;
+    public Text cardType;
+    public float cardEffectRadius;
+    public Sprite ghost;
     int cardCostVal;
     string cardNameVal;
     public BaseCard cardData;
@@ -28,8 +30,10 @@ public class Card : MonoBehaviour
         manager = GameObject.Find("Manager").GetComponent<Manager>();   
         cardCostVal = cardData.cost;
         cardNameVal = cardData.cardName;
+        ghost = cardData.ghost;
         cardName.text = cardNameVal;
         cardCost.text = cardCostVal.ToString();
+        cardEffectRadius = cardData.effectRadius;
     }
 
     private void OnMouseEnter()
@@ -50,7 +54,9 @@ public class Card : MonoBehaviour
             if (manager.CurrencyAvailable >= cardCostVal)
             {
                 manager.CardCost = cardCostVal;
-                manager.setSelection(cardData.objectToMake, cardData.type);
+                manager.selectedGhost = ghost;
+                manager.setSelection(cardData.objectToMake, cardData.type, ghost, cardEffectRadius);
+                //Debug.Log("Card Rad = " + cardEffectRadius);
                 manager.selectedCard = this.gameObject;
             }
         }

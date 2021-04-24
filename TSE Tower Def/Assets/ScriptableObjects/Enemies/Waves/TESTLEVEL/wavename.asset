@@ -12,7 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff6aaeac7426c6743a34371e81719072, type: 3}
   m_Name: wavename
   m_EditorClassIdentifier: 
-  enemies:
-  - {fileID: 0}
-  - {fileID: 0}
-  numToSpawn: 0000000000000000
+  wave:
+  - enemy: {fileID: 0}
+    numToSpawn: 0

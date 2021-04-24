@@ -4,34 +4,35 @@ using UnityEngine;
 
 public class Tower : MonoBehaviour
 {
-    private Transform target = null;
+    [SerializeField]
+    protected Transform target = null;
     //Remove serialize field once everything is implemented correctly
     [Header("Attributes")]
     [SerializeField]
-    private float damage;
+    protected float damage;
     [SerializeField]
-    private float fireRate = 1;
+    protected float fireRate = 1;
     [SerializeField]
-    private float fireTimer = 0f;
+    protected float fireTimer = 0f;
     [SerializeField]
-    private float range = 3;
+    protected float range = 3;
 
 
     [Header("Unity Reqs")]
     //could make an array/list and forloop to have multiple shooting points per turret
     public Transform firePoint;
     public GameObject projectile;
-    private SpriteRenderer spriteRenderer;
+    protected SpriteRenderer spriteRenderer;
     public Sprite sprite;
 
-    private void Start()
+    protected void Start()
     {
         InvokeRepeating("UpdateTarget", 0, .5f);
         spriteRenderer = GetComponent<SpriteRenderer>();
         spriteRenderer.sprite = sprite;
         firePoint = transform.GetChild(0);
     }
-    void UpdateTarget()
+    protected void UpdateTarget()
     {
         //check all objects in game tagged with "Enemy"
         GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
@@ -57,7 +58,7 @@ public class Tower : MonoBehaviour
 
     }
     // Update is called once per frame
-    void Update()
+    protected virtual void Update()
     {
         //if (target = null)
         //    return;
@@ -74,11 +75,10 @@ public class Tower : MonoBehaviour
         if (fireTimer <= 0 && target != null)
         {
             Shoot();
-            fireTimer = 1f / fireRate;
         }
         fireTimer -= Time.deltaTime;
     }
-    void Shoot()
+    protected virtual void Shoot()
     {
         //Create a projectile and assign fields
         GameObject projectileObject = Instantiate(projectile, firePoint.position, firePoint.rotation);
@@ -89,5 +89,6 @@ public class Tower : MonoBehaviour
             projectileScript.Dmg = damage;
             projectileScript.Seek(target.transform);
         }
+        fireTimer = 1f / fireRate;
     }
 }

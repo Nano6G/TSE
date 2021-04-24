@@ -77,9 +77,13 @@
     <Compile Include="Assets\Scripts\Enemies\WaypointsScript.cs" />
     <Compile Include="Assets\Scripts\Manager.cs" />
     <Compile Include="Assets\Scripts\Player\BasicProjectile.cs" />
+    <Compile Include="Assets\Scripts\Player\ChargedProjectile.cs" />
     <Compile Include="Assets\Scripts\Player\Spells\BaseSpell.cs" />
+    <Compile Include="Assets\Scripts\Player\Spells\ExplosionSpell.cs" />
     <Compile Include="Assets\Scripts\Player\Spells\FreezeSpell.cs" />
+    <Compile Include="Assets\Scripts\Player\Spells\VolleySpell.cs" />
     <Compile Include="Assets\Scripts\Player\Towers\BaseTowerScript.cs" />
+    <Compile Include="Assets\Scripts\Player\Towers\SpecialTower.cs" />
     <Compile Include="Assets\Scripts\Player\Towers\Tower.cs" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.17f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>

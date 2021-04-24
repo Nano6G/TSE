@@ -15,7 +15,9 @@ MonoBehaviour:
   cardName: Explosive Tower
   cardDescription: Tower shoot boom
   cardSprite: {fileID: 0}
+  ghost: {fileID: 21300000, guid: 9f05bc0f144b7ce4f9e4ebabb09391ae, type: 3}
   cost: 5
   type: T
   objectToMake: {fileID: 8356354066627503710, guid: 10c34a379b73cda4c86769580fea681b,
     type: 3}
+  effectRadius: 0

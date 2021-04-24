@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-//EnemyScript can be broken up if too muhc is added
+//EnemyScript can be broken up if too much is added
 public class EnemyScript : MonoBehaviour
 {
     [SerializeField]
-    private float speed = 5f, health, MaxHealth = 1, value = 1;
-
+    private float speed = 5f, health, MaxHealth = 1;
+    private int value = 1;
     private Transform target;
     //where on path the enemy is
     private int wavePoint;
@@ -59,12 +59,14 @@ public class EnemyScript : MonoBehaviour
         }
         else
         {
-            Debug.Log("FROZEN");
+            //Debug.Log("FROZEN");
             frozenTimer -= 1 * Time.deltaTime;
         }
+        //Deathscript for enemy
         if (health <= 0)
         {
-            managerScript.UpdateCurrency(1);
+            managerScript.UpdateCurrency(value);
+            manager.GetComponentInChildren<WaveSpawner>().enemyCount--;
             Destroy(gameObject);
         }
 
@@ -81,9 +83,10 @@ public class EnemyScript : MonoBehaviour
     {
         //has reached player base, add a function for damaging player
         if (wavePoint >= WaypointsScript.points.Length-1)
-        {
-            Destroy(gameObject);
+        {       
             managerScript.ChangeHealth(-1);
+            manager.GetComponentInChildren<WaveSpawner>().enemyCount--;
+            Destroy(gameObject);
             return;
         }
         wavePoint++;

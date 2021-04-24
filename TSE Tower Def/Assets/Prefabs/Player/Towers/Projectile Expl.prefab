@@ -47,7 +47,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  explodeRadius: 5
+  explodeRadius: 2
 --- !u!212 &7394569963633963094
 SpriteRenderer:
   m_ObjectHideFlags: 0

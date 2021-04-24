@@ -9,8 +9,11 @@ public class BaseCard : ScriptableObject
     public string cardName;
     public string cardDescription;
     public Sprite cardSprite;
+    public Sprite ghost;
     [Header("Standard Stats")]
     public int cost;
     public string type;
     public GameObject objectToMake;
+    [Header("Special Stats")]
+    public float effectRadius;
 }

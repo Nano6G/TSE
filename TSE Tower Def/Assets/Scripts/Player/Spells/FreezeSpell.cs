@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class FreezeSpell : BaseSpell
 {
-    public float effectRadius = 3f;
     public float effectTime = 3f;
+    public float effectRadius = 0.5f;
 
     public override void Activate()
     {
@@ -22,9 +22,8 @@ public class FreezeSpell : BaseSpell
     void Explosion()
     {
         LayerMask Mask = LayerMask.GetMask("Gameplay");
-        //Collider2D[] hitObjs = Physics.OverlapSphere(transform.position, explodeRadius, 8);
         Collider2D[] hitObjs = Physics2D.OverlapCircleAll(transform.position, effectRadius);
-        //CREATE EXPLOSION HERE
+        //CREATE ANIMATION HERE
 
         //damage all objects
         foreach (Collider2D collider in hitObjs)

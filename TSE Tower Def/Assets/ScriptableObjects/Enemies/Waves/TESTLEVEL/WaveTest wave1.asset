@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff6aaeac7426c6743a34371e81719072, type: 3}
   m_Name: WaveTest wave1
   m_EditorClassIdentifier: 
-  enemies:
-  - {fileID: 11400000, guid: ff6455ddd1a84564a800a7b6482cb1f9, type: 2}
-  numToSpawn: 03000000
+  wave:
+  - enemy: {fileID: 11400000, guid: ff6455ddd1a84564a800a7b6482cb1f9, type: 2}
+    numToSpawn: 4

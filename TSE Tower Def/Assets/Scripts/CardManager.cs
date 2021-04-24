@@ -119,8 +119,6 @@ public class CardManager : MonoBehaviour
     {
         discarded.Add(toRemove.GetComponent<Card>().cardData);
         RefreshHand(toRemove);
-        //Destroy(toRemove);
-        //hand.Remove(toRemove);
     }
 
     //Check the hand and move cards back at a certain point

@@ -7,8 +7,8 @@ using UnityEngine;
 public class BasicProjectile : MonoBehaviour
 {
     public Transform target;
-    private float speed = 50f;
-    private float dmg;
+    protected float speed = 50f;
+    protected float dmg;
     SpriteRenderer spriteRenderer;
     public float Dmg 
     {
@@ -16,9 +16,9 @@ public class BasicProjectile : MonoBehaviour
         set { dmg = value; }
     }
     public float explodeRadius;
-    bool moving = true;
+    public bool moving = true;
 
-    private void Awake()
+    protected void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
@@ -29,7 +29,7 @@ public class BasicProjectile : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    protected virtual void Update()
     {
         //Destroy projectile if target is gone
         if (target == null)
@@ -53,7 +53,7 @@ public class BasicProjectile : MonoBehaviour
         }
     }
 
-    void HitTarget()
+    protected void HitTarget()
     {
         if (explodeRadius > 0)
         {
@@ -64,7 +64,7 @@ public class BasicProjectile : MonoBehaviour
             Hit(target.gameObject);
     }
 
-    void Hit(GameObject EnemyHit)
+    protected void Hit(GameObject EnemyHit)
     {
         //Apply damage here
         EnemyScript targetScript = EnemyHit.GetComponent<EnemyScript>();
@@ -73,7 +73,7 @@ public class BasicProjectile : MonoBehaviour
         Destroy(gameObject);
     }
 
-    void Explosion()
+    protected void Explosion()
     {
         LayerMask Mask = LayerMask.GetMask("Gameplay");
         //Collider2D[] hitObjs = Physics.OverlapSphere(transform.position, explodeRadius, 8);
