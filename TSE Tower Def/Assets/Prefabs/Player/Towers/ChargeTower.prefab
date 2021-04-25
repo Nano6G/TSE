@@ -81,6 +81,9 @@ MonoBehaviour:
   fireRate: 0.5
   fireTimer: 0
   range: 3
+  Value: 200
+  TowerCard: {fileID: 0}
+  manager: {fileID: 0}
   firePoint: {fileID: 2967951106854608276}
   projectile: {fileID: 1337581415120782226, guid: b788f75d63de2f0439a92fb6f9434ff4,
     type: 3}

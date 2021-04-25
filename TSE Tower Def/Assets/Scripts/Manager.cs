@@ -35,9 +35,6 @@ public class Manager: MonoBehaviour
     public Text currencyText;
     public Text HealthText;
 
-    //Timer used for passive currency adding;
-    float currTimerMax = 5f, currTimer;
-
     //Temporary workaround for spells, otherwise they activate instantly
     int clicktimes = 0;
 
@@ -48,21 +45,16 @@ public class Manager: MonoBehaviour
 
     private void Start()
     {
+        pHealth = 10;
         HealthText.text = pHealth.ToString();
         cardManager = GetComponent<CardManager>();
         //currencyText = transform.Find("Currency1").GetComponent<Text>();
         StartCoroutine(UpdateCurrencyRepeat(2));
+        currencyText.text = CurrencyAvailable.ToString();
     }
 
     void Update()
     {
-        currTimer -= Time.deltaTime;
-        if (currTimer < 0)
-        {
-            UpdateCurrency(25);
-            currTimer = currTimerMax;
-        }
-        currencyText.text = CurrencyAvailable.ToString();
         mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         ghostObj.transform.position = mousePos;
         if (Input.GetMouseButtonDown(3))
@@ -78,7 +70,6 @@ public class Manager: MonoBehaviour
                 //selectedTower = null;
                 cardManager.RemoveCard(selectedCard);
                 currencyAvailable -= cardCost;
-                //ghostObj.GetComponent<SpriteRenderer>().sprite = null;
                 Deselct();
             }
             else if (selectedSpell != null && clicktimes > 0 && CheckArea(2) == null && cardCost < currencyAvailable)
@@ -86,10 +77,8 @@ public class Manager: MonoBehaviour
                 //could swap instantiate for having objects off screen to save resources
                 GameObject CastSpell = Instantiate(selectedSpell, mousePos, transform.rotation);
                 CastSpell.GetComponent<BaseSpell>().Activate();
-                //selectedSpell = null;
                 cardManager.RemoveCard(selectedCard);
                 currencyAvailable -= cardCost;
-                //ghostObj.GetComponent<SpriteRenderer>().sprite = null;
                 Deselct();
             }
             clicktimes++;
@@ -123,7 +112,7 @@ public class Manager: MonoBehaviour
         Mathf.Clamp(pHealth, 0, 100);
         HealthText.text = pHealth.ToString();
     }
-
+    //Change relvent fields based on the card chosen
     public void setSelection(GameObject cardin, string typein, Sprite ghostSprite, float effectSize)
     {
         //reset selections to prevent errors
@@ -157,6 +146,7 @@ public class Manager: MonoBehaviour
         else
             ghostObj.transform.localScale = new Vector2(1, 1); //Reset the scale for the ghost object
     }
+    //Discard a card in hand to recieve half its value
     public void Discard()
     {
         if (selectedCard != null)
@@ -166,10 +156,7 @@ public class Manager: MonoBehaviour
             Deselct();
         }
     }
-    public void DeleteTower()
-    {
-
-    }
+    //Empty all fields to prevent issues
     void Deselct()
     {
         selectedTower = null;
@@ -220,8 +207,11 @@ public class Manager: MonoBehaviour
     //Simple coroutine to constantly update income, could alter the repeatrate with spells maybe?
     IEnumerator UpdateCurrencyRepeat(float repeatRate)
     {
-        UpdateCurrency(1);
-        yield return new WaitForSeconds(repeatRate);
+        while (true)
+        {
+            yield return new WaitForSeconds(repeatRate);
+            UpdateCurrency(25);
+        }
     }
     //LOSS
     void LoseEvent()

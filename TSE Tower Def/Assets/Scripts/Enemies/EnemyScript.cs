@@ -13,7 +13,7 @@ public class EnemyScript : MonoBehaviour
     //where on path the enemy is
     private int wavePoint;
 
-    private float frozenTimer = 0f;
+    private float frozenTimer = 0f, slowTimer = 0f, SlowAmount = 0f;
     private bool moving;
 
     private GameObject manager;
@@ -44,13 +44,17 @@ public class EnemyScript : MonoBehaviour
 
     private void Update()
     {
+        if (slowTimer > 0)
+        {
+            slowTimer -= Time.deltaTime;
+        }
         if (frozenTimer <= 0)
         {
             //direction to move
             Vector2 dir = target.position - transform.position;
 
             //move towards target, normalized fixes size so speed doesnt change
-            transform.Translate(dir.normalized * speed * Time.deltaTime, Space.World);
+            transform.Translate(dir.normalized * (speed - (SlowAmount/100*speed)) * Time.deltaTime, Space.World);
 
             if (Vector2.Distance(transform.position, target.position) <= .3f)
             {
@@ -96,5 +100,10 @@ public class EnemyScript : MonoBehaviour
     public void Frozen(float timeFrozen)
     {
         frozenTimer += timeFrozen;
+    }
+    public void Slow(float timeSlowed, float SlowAmnt)
+    {
+        slowTimer = timeSlowed;
+        SlowAmount = SlowAmnt;
     }
 }

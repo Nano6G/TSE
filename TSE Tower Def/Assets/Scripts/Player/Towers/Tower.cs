@@ -18,8 +18,12 @@ public class Tower : MonoBehaviour
     [SerializeField]
     protected float range = 3;
     [SerializeField]
+    protected int Value;
+    [SerializeField]
     protected GameObject TowerCard;
 
+    [SerializeField]
+    private Manager manager;
 
     [Header("Unity Reqs")]
     //could make an array/list and forloop to have multiple shooting points per turret
@@ -30,6 +34,7 @@ public class Tower : MonoBehaviour
 
     protected void Start()
     {
+        manager = GameObject.Find("Manager").GetComponent<Manager>();
         InvokeRepeating("UpdateTarget", 0, .5f);
         spriteRenderer = GetComponent<SpriteRenderer>();
         spriteRenderer.sprite = sprite;
@@ -63,21 +68,17 @@ public class Tower : MonoBehaviour
     // Update is called once per frame
     protected virtual void Update()
     {
-        //if (target = null)
-        //    return;
-        //rotate to shoot at target, depending on sprites implemented we can alter this to rotate a sprite or jsut point to change fire direction
-
         if (target != null)
         {
             Vector3 dir = target.position - transform.position;
             Quaternion shootRotation = Quaternion.LookRotation(dir);
             Vector3 rotation = shootRotation.eulerAngles;
             firePoint.rotation = Quaternion.Euler(Vector3.forward * rotation.y);
-        }
 
-        if (fireTimer <= 0 && target != null)
-        {
-            Shoot();
+            if (fireTimer <= 0)
+            {
+                Shoot();
+            }
         }
         fireTimer -= Time.deltaTime;
     }
@@ -107,4 +108,10 @@ public class Tower : MonoBehaviour
         else if (TowerCard != null && TowerCard.activeSelf)
             TowerCard.SetActive(false);
     }
+    public void Delete()
+    {
+        manager.UpdateCurrency(Value);
+        Destroy(gameObject);
+    }
+
 }

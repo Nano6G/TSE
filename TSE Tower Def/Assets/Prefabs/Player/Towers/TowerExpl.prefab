@@ -76,10 +76,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c2d10a5c97683244a618f69477f4bba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
+  target: {fileID: 0}
+  damage: 2
   fireRate: 1
   fireTimer: 0
   range: 3
+  Value: 300
+  TowerCard: {fileID: 0}
+  manager: {fileID: 0}
   firePoint: {fileID: 2123172865}
   projectile: {fileID: 8751715336430445644, guid: 937cb817a417ef24bade76698037b715,
     type: 3}

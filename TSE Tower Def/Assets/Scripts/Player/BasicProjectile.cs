@@ -17,7 +17,7 @@ public class BasicProjectile : MonoBehaviour
     }
     public float explodeRadius;
     public bool moving = true;
-
+    public float slowamount, slowtime;
     protected void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -70,6 +70,10 @@ public class BasicProjectile : MonoBehaviour
         EnemyScript targetScript = EnemyHit.GetComponent<EnemyScript>();
         targetScript.GetHit(Dmg);
         //Add effects on hit? Simple particle effect assigned in object/prefab
+        if (slowamount > 0)
+        {
+            targetScript.Slow(slowtime, slowamount);
+        }
         Destroy(gameObject);
     }
 
