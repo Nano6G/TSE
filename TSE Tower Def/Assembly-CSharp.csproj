@@ -64,6 +64,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\MENU ASSETS\REDUNDANT\ExitButtonScript.cs" />
+    <Compile Include="Assets\MENU ASSETS\REDUNDANT\PlayButtonScript.cs" />
+    <Compile Include="Assets\MENU ASSETS\REDUNDANT\SettingsButtonScript.cs" />
     <Compile Include="Assets\Scripts\CardManager.cs" />
     <Compile Include="Assets\Scripts\Cards\BaseCard.cs" />
     <Compile Include="Assets\Scripts\Cards\Card.cs" />
@@ -85,6 +88,7 @@
     <Compile Include="Assets\Scripts\Player\Towers\BaseTowerScript.cs" />
     <Compile Include="Assets\Scripts\Player\Towers\SpecialTower.cs" />
     <Compile Include="Assets\Scripts\Player\Towers\Tower.cs" />
+    <Compile Include="Assets\Scripts\SceneManagerScript.cs" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.17f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
