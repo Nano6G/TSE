@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardName: Boom!
   cardDescription: bombs or magic?
-  cardSprite: {fileID: 21300000, guid: 60f72befab0d5c9478770d3e77d7bed2, type: 3}
+  cardSprite: {fileID: -7540365038710865902, guid: c6a2653f85070b94eb44d3b875ed6562,
+    type: 3}
   ghost: {fileID: 21300000, guid: 60f72befab0d5c9478770d3e77d7bed2, type: 3}
   cost: 450
   type: S

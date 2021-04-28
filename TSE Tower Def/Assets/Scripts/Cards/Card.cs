@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class Card : MonoBehaviour
 {
+
+    public SpriteRenderer renderer;
     Manager manager;
 
     [Header("Fields")]
@@ -27,13 +29,17 @@ public class Card : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        manager = GameObject.Find("Manager").GetComponent<Manager>();   
+        if (cardData.cardSprite != null)
+        {
+            renderer.sprite = cardData.cardSprite;
+        }
+        manager = GameObject.Find("Manager").GetComponent<Manager>();
         cardCostVal = cardData.cost;
         cardNameVal = cardData.cardName;
         ghost = cardData.ghost;
         cardName.text = cardNameVal;
         cardCost.text = cardCostVal.ToString();
-        cardEffectRadius = cardData.effectRadius;
+        cardEffectRadius = cardData.effectRadius;       
     }
 
     private void OnMouseEnter()

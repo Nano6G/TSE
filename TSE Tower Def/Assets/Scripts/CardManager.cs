@@ -149,7 +149,7 @@ public class CardManager : MonoBehaviour
         if (discarded.Count > 0)
         {
             //likely a more efficient way to copy the list over
-            for (int i = 0; i < discarded.Count - 1; i++)
+            for (int i = discarded.Count - 1; i > -1; i--)
             {
                 deck.Add(discarded[i]);
             }

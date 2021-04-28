@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardName: ChargeTower
   cardDescription: Charges up to 3 shots for quick fire!
-  cardSprite: {fileID: 0}
+  cardSprite: {fileID: 3837107605520585148, guid: d23114f15e21d4943a8ed32f7afa0bda,
+    type: 3}
   ghost: {fileID: 21300000, guid: 9f05bc0f144b7ce4f9e4ebabb09391ae, type: 3}
   cost: 400
   type: T

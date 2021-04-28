@@ -452,7 +452,7 @@ MonoBehaviour:
   firePoint: {fileID: 2967951106854608276}
   projectile: {fileID: 1337581415120782226, guid: 76ac9404798629f458a9454bc8ff1324,
     type: 3}
-  sprite: {fileID: 21300000, guid: 9f05bc0f144b7ce4f9e4ebabb09391ae, type: 3}
+  sprite: {fileID: 4078053600714474774, guid: f84952c0abdb9e5458dc9b314a3faaa2, type: 3}
 --- !u!61 &2967951107677218029
 BoxCollider2D:
   m_ObjectHideFlags: 0

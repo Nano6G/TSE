@@ -631,7 +631,7 @@ MonoBehaviour:
   firePoint: {fileID: 2967951106854608276}
   projectile: {fileID: 1337581415120782226, guid: b788f75d63de2f0439a92fb6f9434ff4,
     type: 3}
-  sprite: {fileID: 21300000, guid: 9f05bc0f144b7ce4f9e4ebabb09391ae, type: 3}
+  sprite: {fileID: 3837107605520585148, guid: d23114f15e21d4943a8ed32f7afa0bda, type: 3}
   chargeTimer: 3
   chargeTimeMax: 2
   Shots: []
@@ -651,10 +651,10 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 24.802656, y: 35.079998}
+    newSize: {x: 24.802656, y: 35.079998}
+    adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
@@ -705,7 +705,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 24.802656, y: 35.079998}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0

@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardName: Basic Tower
   cardDescription: Tower shoot
-  cardSprite: {fileID: 21300000, guid: 4ee4749b291c5c84f8d32f931f74b7e2, type: 3}
+  cardSprite: {fileID: -6529071047181800916, guid: 00b0aadad8d6dbc44a49979407224d3c,
+    type: 3}
   ghost: {fileID: 21300000, guid: 9f05bc0f144b7ce4f9e4ebabb09391ae, type: 3}
   cost: 200
   type: T

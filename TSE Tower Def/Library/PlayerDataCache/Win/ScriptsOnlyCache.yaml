@@ -7,9 +7,13 @@ ScriptsOnlyBuild:
     - ChargedProjectile
     - EnemyScript
     - EnemyScriptableObject
+    - ExitButtonScript
     - ExplosionSpell
     - FreezeSpell
     - Manager
+    - PlayButtonScript
+    - SceneManagerScript
+    - SettingsButtonScript
     - SpecialTower
     - SpellScriptableObject
     - Tower
@@ -20,6 +24,7 @@ ScriptsOnlyBuild:
     - WaypointsScript
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
+    - UnityEditor.U2D.Animation.SkinningCachePersistentState
     Unity.2D.SpriteShape.Runtime.dll:
     - UnityEngine.U2D.SpriteShape
     - UnityEngine.U2D.SpriteShapeController
@@ -48,9 +53,69 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
+    - UnityEngine.UI.RawImage
     - UnityEngine.UI.Text
   sceneClasses:
-    Assets/Scenes/SampleScene.unity:
+    Assets/Scenes/01MenuScene.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 11256}
+    - Class: 114
+      Script: {instanceID: 11258}
+    - Class: 114
+      Script: {instanceID: 11282}
+    - Class: 114
+      Script: {instanceID: 11590}
+    - Class: 114
+      Script: {instanceID: 11646}
+    - Class: 114
+      Script: {instanceID: 12324}
+    - Class: 114
+      Script: {instanceID: 12518}
+    - Class: 114
+      Script: {instanceID: 13666}
+    - Class: 114
+      Script: {instanceID: 14472}
+    - Class: 114
+      Script: {instanceID: 14486}
+    - Class: 114
+      Script: {instanceID: 14536}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/02TestLevel.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -84,57 +149,59 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 602}
     - Class: 114
-      Script: {instanceID: 11304}
+      Script: {instanceID: 11256}
     - Class: 114
-      Script: {instanceID: 11354}
+      Script: {instanceID: 11258}
     - Class: 114
-      Script: {instanceID: 11394}
+      Script: {instanceID: 11282}
     - Class: 114
-      Script: {instanceID: 11490}
+      Script: {instanceID: 11332}
     - Class: 114
-      Script: {instanceID: 11612}
+      Script: {instanceID: 11372}
     - Class: 114
-      Script: {instanceID: 11668}
+      Script: {instanceID: 11468}
     - Class: 114
-      Script: {instanceID: 11702}
+      Script: {instanceID: 11590}
     - Class: 114
-      Script: {instanceID: 11772}
+      Script: {instanceID: 11646}
     - Class: 114
-      Script: {instanceID: 11888}
+      Script: {instanceID: 11680}
     - Class: 114
-      Script: {instanceID: 12066}
+      Script: {instanceID: 11750}
     - Class: 114
-      Script: {instanceID: 12346}
+      Script: {instanceID: 11866}
     - Class: 114
-      Script: {instanceID: 12364}
+      Script: {instanceID: 12044}
     - Class: 114
-      Script: {instanceID: 12494}
+      Script: {instanceID: 12324}
     - Class: 114
-      Script: {instanceID: 12606}
+      Script: {instanceID: 12342}
     - Class: 114
-      Script: {instanceID: 12654}
+      Script: {instanceID: 12472}
     - Class: 114
-      Script: {instanceID: 12762}
+      Script: {instanceID: 12586}
     - Class: 114
-      Script: {instanceID: 13046}
+      Script: {instanceID: 12634}
     - Class: 114
-      Script: {instanceID: 13074}
+      Script: {instanceID: 12742}
     - Class: 114
-      Script: {instanceID: 13132}
+      Script: {instanceID: 13026}
     - Class: 114
-      Script: {instanceID: 13464}
+      Script: {instanceID: 13088}
     - Class: 114
-      Script: {instanceID: 13858}
+      Script: {instanceID: 13110}
     - Class: 114
-      Script: {instanceID: 13864}
+      Script: {instanceID: 13442}
     - Class: 114
-      Script: {instanceID: 13934}
+      Script: {instanceID: 13838}
     - Class: 114
-      Script: {instanceID: 13978}
+      Script: {instanceID: 13912}
     - Class: 114
-      Script: {instanceID: 14122}
+      Script: {instanceID: 13956}
     - Class: 114
-      Script: {instanceID: 14506}
+      Script: {instanceID: 14100}
+    - Class: 114
+      Script: {instanceID: 14486}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -164,6 +231,18 @@ ScriptsOnlyBuild:
   scriptHashData:
   - hash:
       serializedVersion: 2
+      Hash: 5f1752ed2092162f016c19510c28a8b9
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Button
+  - hash:
+      serializedVersion: 2
+      Hash: ae83e830e7a90c0aff918c4c2e520825
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: GraphicRaycaster
+  - hash:
+      serializedVersion: 2
       Hash: 4bc4346a71a8df53a6b106f68ef3a190
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -176,7 +255,7 @@ ScriptsOnlyBuild:
     className: TMP_SelectionCaret
   - hash:
       serializedVersion: 2
-      Hash: 810fe9360ca0252cfd0d70e9d6f50d57
+      Hash: cad79c9c19121c680eb71861af97da64
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SpecialTower
@@ -200,7 +279,7 @@ ScriptsOnlyBuild:
     className: EnemyScript
   - hash:
       serializedVersion: 2
-      Hash: d225225d89b483eb94579fc4d4eb63e1
+      Hash: 0c0c1dd23dfa6ddbe87c1d802f3e6561
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Card
@@ -446,7 +525,7 @@ ScriptsOnlyBuild:
     className: Selectable
   - hash:
       serializedVersion: 2
-      Hash: f4e7178f16c53166804ed818b463933d
+      Hash: 79971d89f2ee09dd612bf9d91de1dd50
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Tower
@@ -456,6 +535,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: BaseSpell
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ExitButtonScript
   - hash:
       serializedVersion: 2
       Hash: f8cdc061cd6464612fa51bafd5669fd0
@@ -516,12 +601,6 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Manager
-  - hash:
-      serializedVersion: 2
-      Hash: 5f1752ed2092162f016c19510c28a8b9
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: Button
   - hash:
       serializedVersion: 2
       Hash: f84d945e5e1ca985698660fc26e9657f
@@ -614,6 +693,12 @@ ScriptsOnlyBuild:
     className: TimelineAsset
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SettingsButtonScript
+  - hash:
+      serializedVersion: 2
       Hash: 6939772cb3ce775a8e8d99f332534491
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -626,16 +711,10 @@ ScriptsOnlyBuild:
     className: AudioTrack
   - hash:
       serializedVersion: 2
-      Hash: 4b01129aa831677b7122b082b7bb8625
+      Hash: 86328ff66d3b88a80ea7101f618e12fd
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: BasicProjectile
-  - hash:
-      serializedVersion: 2
-      Hash: ae83e830e7a90c0aff918c4c2e520825
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: GraphicRaycaster
   - hash:
       serializedVersion: 2
       Hash: 8e6ceabfd38a184413d69b7db56c89cc
@@ -650,7 +729,7 @@ ScriptsOnlyBuild:
     className: WaveScriptableObject
   - hash:
       serializedVersion: 2
-      Hash: 7cfbdf7133a615b209d8ca59f35fd512
+      Hash: 0982130a6aa82d409d03db42db74aaa8
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: EnemyScriptableObject
@@ -662,7 +741,7 @@ ScriptsOnlyBuild:
     className: MarkerTrack
   - hash:
       serializedVersion: 2
-      Hash: 461fab9700c7eaeba04cb1bead853010
+      Hash: 3380c347186740e203be635c69f87d53
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ChargedProjectile
@@ -734,6 +813,12 @@ ScriptsOnlyBuild:
     className: Dropdown
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SceneManagerScript
+  - hash:
+      serializedVersion: 2
       Hash: 748dd2a2a28da4e618912da5ac45684b
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
@@ -758,6 +843,12 @@ ScriptsOnlyBuild:
     className: Slider
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayButtonScript
+  - hash:
+      serializedVersion: 2
       Hash: 0fd6822f6177297bd0eb4d83cc7a9030
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -776,5 +867,7 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   platform: 5
   scenePathNames:
-  - Assets/Scenes/SampleScene.unity
-  playerPath: D:/##GITREPOS##/UNI/TSE/TSE TD - Build/TSE Tower Def.exe
+  - Assets/Scenes/01MenuScene.unity
+  - Assets/Scenes/02TestLevel.unity
+  playerPath: C:/Users/Mysticfox99/Downloads/TSE-master(6)/TSE-master/Build v2/TSE
+    Tower Def.exe
