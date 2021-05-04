@@ -24,7 +24,6 @@ ScriptsOnlyBuild:
     - WaypointsScript
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
-    - UnityEditor.U2D.Animation.SkinningCachePersistentState
     Unity.2D.SpriteShape.Runtime.dll:
     - UnityEngine.U2D.SpriteShape
     - UnityEngine.U2D.SpriteShapeController
@@ -869,5 +868,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/01MenuScene.unity
   - Assets/Scenes/02TestLevel.unity
-  playerPath: C:/Users/Mysticfox99/Downloads/TSE-master(6)/TSE-master/Build v2/TSE
-    Tower Def.exe
+  playerPath: D:/##GITREPOS##/UNI/TSE/TSE TD - Build/TSE Tower Def.exe
