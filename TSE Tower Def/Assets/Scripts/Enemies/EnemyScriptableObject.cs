@@ -10,4 +10,7 @@ public class EnemyScriptableObject : ScriptableObject
     public int value;
     public Sprite sprite;
     public RuntimeAnimatorController anim;
+    //0 = basic 1 = boss, more enemy types can be made with this sytem instead of a bool
+    public int enemytype;
+    public int ID;
 }

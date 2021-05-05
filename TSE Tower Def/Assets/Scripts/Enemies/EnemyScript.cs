@@ -7,24 +7,28 @@ using UnityEngine.UI;
 public class EnemyScript : MonoBehaviour
 {
     [SerializeField]
-    private float speed = 5f, health, MaxHealth = 1;
-    private int value = 1;
-    private Transform target;
+    protected float speed = 5f, health, MaxHealth = 1;
+    protected int value = 1;
+    protected Transform target;
     //where on path the enemy is
-    private int wavePoint;
+    protected int wavePoint;
 
-    private float frozenTimer = 0f, slowTimer = 0f, SlowAmount = 0f;
-    private bool moving;
+    protected float frozenTimer = 0f, slowTimer = 0f, SlowAmount = 0f;
+    protected bool moving;
 
-    private GameObject manager;
-    private Manager managerScript;
-    private RuntimeAnimatorController animator;
+    protected GameObject manager;
+    protected Manager managerScript;
+    protected RuntimeAnimatorController animator;
+    protected ParticleSystem particles;
     
     [Header("UI")]
     public Image healthBar;
 
+    [Header("debugging")]
+    public int ID;
+
     //should be called before fully spawned
-    public void assignStats(float speedin, float healthin, int valuein, Sprite spritein, RuntimeAnimatorController controller)
+    public void assignStats(float speedin, float healthin, int valuein, Sprite spritein, RuntimeAnimatorController controller,int IDin)
     {
         speed = speedin; MaxHealth = healthin; GetComponent<SpriteRenderer>().sprite = spritein; value = valuein;
         health = MaxHealth;
@@ -32,29 +36,47 @@ public class EnemyScript : MonoBehaviour
         animator = GetComponent<Animator>().runtimeAnimatorController;
         animator = controller;
         GetComponent<Animator>().runtimeAnimatorController = controller;
+        ID = IDin;
     }
-    void Start()
+    protected void Start()
     {
         manager = GameObject.Find("Manager");
         managerScript = manager.GetComponent<Manager>();
-
+        particles = GetComponentInChildren<ParticleSystem>();
         health = MaxHealth;
         target = WaypointsScript.points[0];
     }
 
-    private void Update()
+    protected void Update()
     {
         if (slowTimer > 0)
         {
             slowTimer -= Time.deltaTime;
         }
+        if (slowTimer < 0 && SlowAmount > 0)
+        {
+            SlowAmount = 0;
+        }
+
+        Move();
+        //Deathscript for enemy
+        if (health <= 0)
+        {
+            managerScript.UpdateCurrency(value);
+            manager.GetComponentInChildren<WaveSpawner>().enemyCount--;
+            Destroy(gameObject);
+        }
+    }
+
+    protected virtual void Move()
+    {
         if (frozenTimer <= 0)
         {
             //direction to move
             Vector2 dir = target.position - transform.position;
 
             //move towards target, normalized fixes size so speed doesnt change
-            transform.Translate(dir.normalized * (speed - (SlowAmount/100*speed)) * Time.deltaTime, Space.World);
+            transform.Translate(dir.normalized * (speed - (SlowAmount / 100 * speed)) * Time.deltaTime, Space.World);
 
             if (Vector2.Distance(transform.position, target.position) <= .3f)
             {
@@ -66,24 +88,16 @@ public class EnemyScript : MonoBehaviour
             //Debug.Log("FROZEN");
             frozenTimer -= 1 * Time.deltaTime;
         }
-        //Deathscript for enemy
-        if (health <= 0)
-        {
-            managerScript.UpdateCurrency(value);
-            manager.GetComponentInChildren<WaveSpawner>().enemyCount--;
-            Destroy(gameObject);
-        }
-
     }
-
     public void GetHit(float PhysDmg)
     {
         health -= PhysDmg;
         healthBar.fillAmount = health / MaxHealth;
+        particles.Play();
     }
 
     //change move target
-    void GetNextWayPoint()
+    protected void GetNextWayPoint()
     {
         //has reached player base, add a function for damaging player
         if (wavePoint >= WaypointsScript.points.Length-1)

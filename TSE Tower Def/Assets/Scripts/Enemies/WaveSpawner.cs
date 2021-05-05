@@ -42,10 +42,17 @@ public class WaveSpawner : MonoBehaviour
             //Spawn the current enemy 
             for (int j = 0; j < waves[waveNumber].wave[i].numToSpawn; j++)
             {
-                // Create a single enemy and assign values
-                GameObject spawned = Instantiate(enemyList[0].gameObject, transform.position, transform.rotation);
+                GameObject spawned;
+                if (waves[waveNumber].wave[i].enemy.enemytype == 2)
+                {
+                    // Create a single enemy and assign values
+                    spawned = Instantiate(enemyList[1].gameObject, transform.position, transform.rotation);
+                }
+                else
+                    spawned = Instantiate(enemyList[0].gameObject, transform.position, transform.rotation);
+
                 // Lots of public variables, could be made into GET:SET for oop
-                spawned.GetComponent<EnemyScript>().assignStats(waves[i].wave[i].enemy.speed, waves[i].wave[i].enemy.health, waves[i].wave[i].enemy.value, waves[i].wave[i].enemy.sprite, waves[i].wave[i].enemy.anim);
+                spawned.GetComponent<EnemyScript>().assignStats(waves[i].wave[i].enemy.speed, waves[i].wave[i].enemy.health, waves[i].wave[i].enemy.value, waves[i].wave[i].enemy.sprite, waves[i].wave[i].enemy.anim, waves[i].wave[i].enemy.ID);
                 enemyCount++;
                 // Pause before next enemy, necessary to prevent too much overlap
                 yield return new WaitForSeconds(.5f);

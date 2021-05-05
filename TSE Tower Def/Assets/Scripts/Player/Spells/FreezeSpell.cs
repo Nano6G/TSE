@@ -16,7 +16,7 @@ public class FreezeSpell : BaseSpell
     {
         //Apply Effect here
         EnemyScript targetScript = EnemyHit.GetComponent<EnemyScript>();
-        targetScript.Frozen(effectTime);
+        targetScript.Slow(effectTime, 100);
     }
 
     void Explosion()
