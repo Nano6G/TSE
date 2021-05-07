@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
 using UnityEngine.UI;
+using System.Linq;
 
 public class SceneManagerScript : MonoBehaviour
 {
@@ -14,7 +15,7 @@ public class SceneManagerScript : MonoBehaviour
     //Main Menu Code
     private void Start()
     {
-        resolutions = Screen.resolutions; //Gather list of resolutions available
+        resolutions = Screen.resolutions.Select(resolution => new Resolution { width = resolution.width, height = resolution.height }).Distinct().ToArray(); //Gather list of resolutions available
         resolutionDropdown.ClearOptions(); //Clear resolutions in option dropdown
         
         List<string> options = new List<string>(); //List of  strings containing resolutions
@@ -28,8 +29,8 @@ public class SceneManagerScript : MonoBehaviour
             options.Add(option); //Add the string to the options list
 
             //Compare the resolution lenght and height to see if the correct resolution is being used
-            if (resolutions[i].width == Screen.currentResolution.width && 
-                resolutions[i].height == Screen.currentResolution.height) 
+            if (resolutions[i].width == Screen.width && 
+                resolutions[i].height == Screen.height) 
             {
                 currentResolutionIndex = i;
             }
