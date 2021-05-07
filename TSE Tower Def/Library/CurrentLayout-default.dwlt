@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: Game
   m_RootView: {fileID: 6}
-  m_MinSize: {x: 875, y: 542}
+  m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -71,8 +71,8 @@ MonoBehaviour:
     y: 0
     width: 463
     height: 1317
-  m_MinSize: {x: 231, y: 471}
-  m_MaxSize: {x: 10001, y: 14021}
+  m_MinSize: {x: 231, y: 492}
+  m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
   controlID: 47
 --- !u!114 &4
@@ -94,8 +94,8 @@ MonoBehaviour:
     y: 0
     width: 735
     height: 439
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 101, y: 121}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -122,10 +122,10 @@ MonoBehaviour:
     y: 0
     width: 735
     height: 1317
-  m_MinSize: {x: 275, y: 150}
-  m_MaxSize: {x: 4000, y: 8000}
+  m_MinSize: {x: 276, y: 192}
+  m_MaxSize: {x: 4001, y: 8042}
   vertical: 1
-  controlID: 180
+  controlID: 186
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -215,10 +215,10 @@ MonoBehaviour:
     y: 30
     width: 2560
     height: 1317
-  m_MinSize: {x: 738, y: 492}
-  m_MaxSize: {x: 24003, y: 14042}
+  m_MinSize: {x: 739, y: 492}
+  m_MaxSize: {x: 24004, y: 14042}
   vertical: 0
-  controlID: 179
+  controlID: 185
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -269,7 +269,7 @@ MonoBehaviour:
   m_MinSize: {x: 232, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 114
+  controlID: 110
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -280,7 +280,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: SceneView
+  m_Name: GameView
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -289,17 +289,17 @@ MonoBehaviour:
     y: 0
     width: 1362
     height: 909
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 20}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
   - {fileID: 20}
   - {fileID: 21}
   - {fileID: 17}
   - {fileID: 22}
-  m_Selected: 1
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -393,21 +393,21 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/MENU ASSETS/Fonts
+    - Assets/MENU ASSETS
   m_ViewMode: 1
   m_StartGridSize: 53
   m_LastFolders:
-  - Assets/MENU ASSETS/Fonts
+  - Assets/MENU ASSETS
   m_LastFoldersGridSize: 53
-  m_LastProjectPath: C:\Users\Mysticfox99\Downloads\TSE-master(7)\TSE-master\TSE
+  m_LastProjectPath: C:\Users\Mysticfox99\Downloads\TSE-master(4)\TSE-master\TSE
     Tower Def
   m_LockTracker:
     m_IsLocked: 1
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 72410000
-    m_LastClickedID: 16754
-    m_ExpandedIDs: 000000007e400000804000008a40000000ca9a3b
+    m_SelectedIDs: c23c0000
+    m_LastClickedID: 15554
+    m_ExpandedIDs: 00000000b83c0000ba3c0000c23c000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -435,7 +435,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000007e40000080400000
+    m_ExpandedIDs: 00000000b83c0000ba3c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -693,7 +693,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 0
+    m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -755,7 +755,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 549dfeff6a9dfeffc49efeffcc9efefffaf1feff4602ffffc615ffff002bffff2640ffff2e9cffff349cffff449cffff94ccffffa4ccffffb6ccffffe4ccffffa0f1ffffa0f3ffff58f4ffffa8f5ffffb4400000d240000010410000
+      m_ExpandedIDs: a497ffffb897ffff7e98ffff9098ffff5ea1ffffa6bdffff04f3ffffe8f3fffffef3ffff54f5ffff58f5ffff4efbffffd4390000483a0000523a0000964d00009c4d0000b64d0000be4d0000fc4d0000184e0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -815,9 +815,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 544.62726, y: 355.3884, z: -35.4375}
+    m_Target: {x: 400.13168, y: 117.30164, z: -309266.34}
     speed: 2
-    m_Value: {x: 544.62726, y: 355.3884, z: -35.4375}
+    m_Value: {x: 400.13168, y: 117.30164, z: -309266.34}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -867,9 +867,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 427.3137
+    m_Target: 335.35754
     speed: 2
-    m_Value: 427.3137
+    m_Value: 335.35754
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -922,7 +922,7 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_MixersTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: cca3ffff
+    m_SelectedIDs: 
     m_LastClickedID: -23604
     m_ExpandedIDs: 12eb343c
     m_RenameOverlay:
@@ -1149,21 +1149,21 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Sprites
+    - Assets/Scenes
   m_ViewMode: 1
   m_StartGridSize: 95
   m_LastFolders:
-  - Assets/Sprites
+  - Assets/Scenes
   m_LastFoldersGridSize: 95
-  m_LastProjectPath: C:\Users\Mysticfox99\Downloads\TSE-master(7)\TSE-master\TSE
+  m_LastProjectPath: C:\Users\Mysticfox99\Downloads\TSE-master(4)\TSE-master\TSE
     Tower Def
   m_LockTracker:
     m_IsLocked: 1
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 113}
-    m_SelectedIDs: 9a400000
-    m_LastClickedID: 16538
-    m_ExpandedIDs: 000000007e400000804000008a4000009040000096400000984000009a4000006c4d00007c4d000000ca9a3b
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: cc3c0000
+    m_LastClickedID: 15564
+    m_ExpandedIDs: 00000000b83c0000ba3c000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1191,7 +1191,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000007e40000080400000
+    m_ExpandedIDs: 00000000b83c0000ba3c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 

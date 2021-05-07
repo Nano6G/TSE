@@ -76,33 +76,33 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11256}
+      Script: {instanceID: 11258}
     - Class: 114
-      Script: {instanceID: 11362}
+      Script: {instanceID: 11260}
     - Class: 114
-      Script: {instanceID: 11670}
+      Script: {instanceID: 11286}
     - Class: 114
-      Script: {instanceID: 11674}
+      Script: {instanceID: 11594}
     - Class: 114
-      Script: {instanceID: 11726}
+      Script: {instanceID: 11598}
     - Class: 114
-      Script: {instanceID: 12230}
+      Script: {instanceID: 11650}
     - Class: 114
-      Script: {instanceID: 12404}
+      Script: {instanceID: 12154}
     - Class: 114
-      Script: {instanceID: 12766}
+      Script: {instanceID: 12328}
     - Class: 114
-      Script: {instanceID: 13134}
+      Script: {instanceID: 12690}
+    - Class: 114
+      Script: {instanceID: 14456}
+    - Class: 114
+      Script: {instanceID: 14476}
+    - Class: 114
+      Script: {instanceID: 14490}
+    - Class: 114
+      Script: {instanceID: 14510}
     - Class: 114
       Script: {instanceID: 14532}
-    - Class: 114
-      Script: {instanceID: 14552}
-    - Class: 114
-      Script: {instanceID: 14566}
-    - Class: 114
-      Script: {instanceID: 14586}
-    - Class: 114
-      Script: {instanceID: 14608}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -155,53 +155,53 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11256}
+      Script: {instanceID: 11258}
     - Class: 114
-      Script: {instanceID: 11362}
+      Script: {instanceID: 11260}
     - Class: 114
-      Script: {instanceID: 11412}
+      Script: {instanceID: 11286}
     - Class: 114
-      Script: {instanceID: 11452}
+      Script: {instanceID: 11336}
     - Class: 114
-      Script: {instanceID: 11548}
+      Script: {instanceID: 11376}
     - Class: 114
-      Script: {instanceID: 11670}
+      Script: {instanceID: 11472}
     - Class: 114
-      Script: {instanceID: 11726}
+      Script: {instanceID: 11594}
     - Class: 114
-      Script: {instanceID: 11830}
+      Script: {instanceID: 11650}
     - Class: 114
-      Script: {instanceID: 11946}
+      Script: {instanceID: 11754}
     - Class: 114
-      Script: {instanceID: 12124}
+      Script: {instanceID: 11870}
     - Class: 114
-      Script: {instanceID: 12404}
+      Script: {instanceID: 12048}
     - Class: 114
-      Script: {instanceID: 12552}
+      Script: {instanceID: 12328}
     - Class: 114
-      Script: {instanceID: 12666}
+      Script: {instanceID: 12476}
     - Class: 114
-      Script: {instanceID: 12714}
+      Script: {instanceID: 12590}
     - Class: 114
-      Script: {instanceID: 12822}
+      Script: {instanceID: 12638}
     - Class: 114
-      Script: {instanceID: 13106}
+      Script: {instanceID: 12746}
     - Class: 114
-      Script: {instanceID: 13134}
+      Script: {instanceID: 13030}
     - Class: 114
-      Script: {instanceID: 13192}
+      Script: {instanceID: 13114}
     - Class: 114
-      Script: {instanceID: 13524}
+      Script: {instanceID: 13446}
     - Class: 114
-      Script: {instanceID: 13918}
+      Script: {instanceID: 13842}
     - Class: 114
-      Script: {instanceID: 13992}
+      Script: {instanceID: 13916}
     - Class: 114
-      Script: {instanceID: 14036}
+      Script: {instanceID: 13960}
     - Class: 114
-      Script: {instanceID: 14180}
+      Script: {instanceID: 14104}
     - Class: 114
-      Script: {instanceID: 14566}
+      Script: {instanceID: 14490}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -225,6 +225,12 @@ ScriptsOnlyBuild:
     - Class: 224
       Script: {instanceID: 0}
   scriptHashData:
+  - hash:
+      serializedVersion: 2
+      Hash: 5f1752ed2092162f016c19510c28a8b9
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Button
   - hash:
       serializedVersion: 2
       Hash: ae83e830e7a90c0aff918c4c2e520825
@@ -593,12 +599,6 @@ ScriptsOnlyBuild:
     className: Manager
   - hash:
       serializedVersion: 2
-      Hash: 5f1752ed2092162f016c19510c28a8b9
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: Button
-  - hash:
-      serializedVersion: 2
       Hash: f84d945e5e1ca985698660fc26e9657f
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -871,5 +871,5 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/01MenuScene.unity
   - Assets/Scenes/02TestLevel.unity
-  playerPath: C:/Users/Mysticfox99/Downloads/TSE-master(7)/TSE-master/TSE TD - Build
-    v2/TSE Tower Def.exe
+  playerPath: C:/Users/Mysticfox99/Downloads/TSE-master(4)/TSE-master/TSE TD-v2.2/TSE
+    Tower Def.exe
