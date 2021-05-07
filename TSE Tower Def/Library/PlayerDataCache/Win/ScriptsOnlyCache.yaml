@@ -7,13 +7,10 @@ ScriptsOnlyBuild:
     - ChargedProjectile
     - EnemyScript
     - EnemyScriptableObject
-    - ExitButtonScript
     - ExplosionSpell
     - FreezeSpell
     - Manager
-    - PlayButtonScript
     - SceneManagerScript
-    - SettingsButtonScript
     - SpecialTower
     - SpellScriptableObject
     - Tower
@@ -24,9 +21,6 @@ ScriptsOnlyBuild:
     - WaypointsScript
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
-    Unity.2D.SpriteShape.Runtime.dll:
-    - UnityEngine.U2D.SpriteShape
-    - UnityEngine.U2D.SpriteShapeController
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridPaintingState
     - UnityEditor.Tilemaps.GridPaletteBrushes
@@ -50,10 +44,15 @@ ScriptsOnlyBuild:
     - UnityEngine.EventSystems.StandaloneInputModule
     - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
+    - UnityEngine.UI.Dropdown
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
-    - UnityEngine.UI.RawImage
+    - UnityEngine.UI.Mask
+    - UnityEngine.UI.ScrollRect
+    - UnityEngine.UI.Scrollbar
+    - UnityEngine.UI.Slider
     - UnityEngine.UI.Text
+    - UnityEngine.UI.Toggle
   sceneClasses:
     Assets/Scenes/01MenuScene.unity:
     - Class: 1
@@ -79,25 +78,31 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11256}
     - Class: 114
-      Script: {instanceID: 11258}
+      Script: {instanceID: 11362}
     - Class: 114
-      Script: {instanceID: 11282}
+      Script: {instanceID: 11670}
     - Class: 114
-      Script: {instanceID: 11590}
+      Script: {instanceID: 11674}
     - Class: 114
-      Script: {instanceID: 11646}
+      Script: {instanceID: 11726}
     - Class: 114
-      Script: {instanceID: 12324}
+      Script: {instanceID: 12230}
     - Class: 114
-      Script: {instanceID: 12518}
+      Script: {instanceID: 12404}
     - Class: 114
-      Script: {instanceID: 13666}
+      Script: {instanceID: 12766}
     - Class: 114
-      Script: {instanceID: 14472}
+      Script: {instanceID: 13134}
     - Class: 114
-      Script: {instanceID: 14486}
+      Script: {instanceID: 14532}
     - Class: 114
-      Script: {instanceID: 14536}
+      Script: {instanceID: 14552}
+    - Class: 114
+      Script: {instanceID: 14566}
+    - Class: 114
+      Script: {instanceID: 14586}
+    - Class: 114
+      Script: {instanceID: 14608}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -113,6 +118,12 @@ ScriptsOnlyBuild:
     - Class: 223
       Script: {instanceID: 0}
     - Class: 224
+      Script: {instanceID: 0}
+    - Class: 241
+      Script: {instanceID: 0}
+    - Class: 243
+      Script: {instanceID: 0}
+    - Class: 245
       Script: {instanceID: 0}
     Assets/Scenes/02TestLevel.unity:
     - Class: 1
@@ -131,8 +142,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 58
       Script: {instanceID: 0}
-    - Class: 60
-      Script: {instanceID: 0}
     - Class: 61
       Script: {instanceID: 0}
     - Class: 74
@@ -146,61 +155,53 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 602}
-    - Class: 114
       Script: {instanceID: 11256}
     - Class: 114
-      Script: {instanceID: 11258}
+      Script: {instanceID: 11362}
     - Class: 114
-      Script: {instanceID: 11282}
+      Script: {instanceID: 11412}
     - Class: 114
-      Script: {instanceID: 11332}
+      Script: {instanceID: 11452}
     - Class: 114
-      Script: {instanceID: 11372}
+      Script: {instanceID: 11548}
     - Class: 114
-      Script: {instanceID: 11468}
+      Script: {instanceID: 11670}
     - Class: 114
-      Script: {instanceID: 11590}
+      Script: {instanceID: 11726}
     - Class: 114
-      Script: {instanceID: 11646}
+      Script: {instanceID: 11830}
     - Class: 114
-      Script: {instanceID: 11680}
+      Script: {instanceID: 11946}
     - Class: 114
-      Script: {instanceID: 11750}
+      Script: {instanceID: 12124}
     - Class: 114
-      Script: {instanceID: 11866}
+      Script: {instanceID: 12404}
     - Class: 114
-      Script: {instanceID: 12044}
+      Script: {instanceID: 12552}
     - Class: 114
-      Script: {instanceID: 12324}
+      Script: {instanceID: 12666}
     - Class: 114
-      Script: {instanceID: 12342}
+      Script: {instanceID: 12714}
     - Class: 114
-      Script: {instanceID: 12472}
+      Script: {instanceID: 12822}
     - Class: 114
-      Script: {instanceID: 12586}
+      Script: {instanceID: 13106}
     - Class: 114
-      Script: {instanceID: 12634}
+      Script: {instanceID: 13134}
     - Class: 114
-      Script: {instanceID: 12742}
+      Script: {instanceID: 13192}
     - Class: 114
-      Script: {instanceID: 13026}
+      Script: {instanceID: 13524}
     - Class: 114
-      Script: {instanceID: 13088}
+      Script: {instanceID: 13918}
     - Class: 114
-      Script: {instanceID: 13110}
+      Script: {instanceID: 13992}
     - Class: 114
-      Script: {instanceID: 13442}
+      Script: {instanceID: 14036}
     - Class: 114
-      Script: {instanceID: 13838}
+      Script: {instanceID: 14180}
     - Class: 114
-      Script: {instanceID: 13912}
-    - Class: 114
-      Script: {instanceID: 13956}
-    - Class: 114
-      Script: {instanceID: 14100}
-    - Class: 114
-      Script: {instanceID: 14486}
+      Script: {instanceID: 14566}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -208,6 +209,10 @@ ScriptsOnlyBuild:
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
       Script: {instanceID: 0}
     - Class: 212
       Script: {instanceID: 0}
@@ -219,21 +224,7 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 224
       Script: {instanceID: 0}
-    - Class: 156049354
-      Script: {instanceID: 0}
-    - Class: 483693784
-      Script: {instanceID: 0}
-    - Class: 1839735485
-      Script: {instanceID: 0}
-    - Class: 1971053207
-      Script: {instanceID: 0}
   scriptHashData:
-  - hash:
-      serializedVersion: 2
-      Hash: 5f1752ed2092162f016c19510c28a8b9
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: Button
   - hash:
       serializedVersion: 2
       Hash: ae83e830e7a90c0aff918c4c2e520825
@@ -272,7 +263,7 @@ ScriptsOnlyBuild:
     className: TMP_Dropdown
   - hash:
       serializedVersion: 2
-      Hash: 50834221aae0221efaff0fcdfeb9880f
+      Hash: 028deaa32d1dbb9c5230e7dabb3bca4b
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: EnemyScript
@@ -602,6 +593,12 @@ ScriptsOnlyBuild:
     className: Manager
   - hash:
       serializedVersion: 2
+      Hash: 5f1752ed2092162f016c19510c28a8b9
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Button
+  - hash:
+      serializedVersion: 2
       Hash: f84d945e5e1ca985698660fc26e9657f
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -728,7 +725,7 @@ ScriptsOnlyBuild:
     className: WaveScriptableObject
   - hash:
       serializedVersion: 2
-      Hash: 0982130a6aa82d409d03db42db74aaa8
+      Hash: e062a1b511a0bd3b75512c1e25118963
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: EnemyScriptableObject
@@ -812,7 +809,7 @@ ScriptsOnlyBuild:
     className: Dropdown
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: 8b21061e9d037d307e029130da878344
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SceneManagerScript
@@ -848,6 +845,12 @@ ScriptsOnlyBuild:
     className: PlayButtonScript
   - hash:
       serializedVersion: 2
+      Hash: 028deaa32d1dbb9c5230e7dabb3bca4b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: EnemyBossScript
+  - hash:
+      serializedVersion: 2
       Hash: 0fd6822f6177297bd0eb4d83cc7a9030
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -868,4 +871,5 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/01MenuScene.unity
   - Assets/Scenes/02TestLevel.unity
-  playerPath: D:/##GITREPOS##/UNI/TSE/TSE TD - Build/TSE Tower Def.exe
+  playerPath: C:/Users/Mysticfox99/Downloads/TSE-master(7)/TSE-master/TSE TD - Build
+    v2/TSE Tower Def.exe
