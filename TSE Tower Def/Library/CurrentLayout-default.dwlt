@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: Game
   m_RootView: {fileID: 6}
-  m_MinSize: {x: 875, y: 300}
+  m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -74,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 231, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 47
+  controlID: 67
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -125,7 +125,7 @@ MonoBehaviour:
   m_MinSize: {x: 276, y: 192}
   m_MaxSize: {x: 4001, y: 8042}
   vertical: 1
-  controlID: 186
+  controlID: 218
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -148,7 +148,7 @@ MonoBehaviour:
     y: 0
     width: 2560
     height: 1367
-  m_MinSize: {x: 875, y: 300}
+  m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &7
 MonoBehaviour:
@@ -218,7 +218,7 @@ MonoBehaviour:
   m_MinSize: {x: 739, y: 492}
   m_MaxSize: {x: 24004, y: 14042}
   vertical: 0
-  controlID: 185
+  controlID: 28
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -238,8 +238,8 @@ MonoBehaviour:
     y: 0
     width: 463
     height: 878
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
@@ -269,7 +269,7 @@ MonoBehaviour:
   m_MinSize: {x: 232, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 110
+  controlID: 29
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -289,8 +289,8 @@ MonoBehaviour:
     y: 0
     width: 1362
     height: 909
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
@@ -347,8 +347,8 @@ MonoBehaviour:
     y: 439
     width: 735
     height: 878
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 26}
   m_Panes:
   - {fileID: 26}
@@ -393,21 +393,21 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/MENU ASSETS
+    - Assets/Sprites/Projectiles
   m_ViewMode: 1
   m_StartGridSize: 53
   m_LastFolders:
-  - Assets/MENU ASSETS
+  - Assets/Sprites/Projectiles
   m_LastFoldersGridSize: 53
-  m_LastProjectPath: C:\Users\Mysticfox99\Downloads\TSE-master(4)\TSE-master\TSE
+  m_LastProjectPath: C:\Users\Mysticfox99\Downloads\TSE-master(3)\TSE-master\TSE
     Tower Def
   m_LockTracker:
     m_IsLocked: 1
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: c23c0000
-    m_LastClickedID: 15554
-    m_ExpandedIDs: 00000000b83c0000ba3c0000c23c000000ca9a3b
+    m_SelectedIDs: de3e0000
+    m_LastClickedID: 16094
+    m_ExpandedIDs: 00000000b63e0000b83e0000da3e000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -435,7 +435,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000b83c0000ba3c0000
+    m_ExpandedIDs: 00000000b63e0000b83e0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -462,7 +462,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: 423b0000f0390000583b0000065e0000b0650000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -755,7 +755,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: a497ffffb897ffff7e98ffff9098ffff5ea1ffffa6bdffff04f3ffffe8f3fffffef3ffff54f5ffff58f5ffff4efbffffd4390000483a0000523a0000964d00009c4d0000b64d0000be4d0000fc4d0000184e0000
+      m_ExpandedIDs: b6f8ffffcaf8ffff92f9ffffa4f9ffff5cfbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1042,7 +1042,6 @@ MonoBehaviour:
     m_KeySerializationHelper:
     - {fileID: 5521817002178606848, guid: e5aa3cadbc0963c4cb221c5953a2186f, type: 2}
     - {fileID: -1021407646360890022, guid: 798de99d58c4c81469c4d37eacd990c6, type: 2}
-    - {fileID: -5399102095125462471, guid: 17358113410f20a4ebb761973a8ca546, type: 2}
     m_ValueSerializationHelper:
     - e00: 0.6557895
       e01: 0
@@ -1068,22 +1067,6 @@ MonoBehaviour:
       e11: 0.6557895
       e12: 0
       e13: 241.25789
-      e20: 0
-      e21: 0
-      e22: 1
-      e23: 0
-      e30: 0
-      e31: 0
-      e32: 0
-      e33: 1
-    - e00: 0.95943195
-      e01: 0
-      e02: 0
-      e03: -258.15326
-      e10: 0
-      e11: 0.95943195
-      e12: 0
-      e13: 159.1356
       e20: 0
       e21: 0
       e22: 1
@@ -1149,21 +1132,21 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Prefabs/Player/Towers
   m_ViewMode: 1
   m_StartGridSize: 95
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Prefabs/Player/Towers
   m_LastFoldersGridSize: 95
-  m_LastProjectPath: C:\Users\Mysticfox99\Downloads\TSE-master(4)\TSE-master\TSE
+  m_LastProjectPath: C:\Users\Mysticfox99\Downloads\TSE-master(3)\TSE-master\TSE
     Tower Def
   m_LockTracker:
     m_IsLocked: 1
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: cc3c0000
-    m_LastClickedID: 15564
-    m_ExpandedIDs: 00000000b83c0000ba3c000000ca9a3b
+    m_SelectedIDs: ea3e0000
+    m_LastClickedID: 16106
+    m_ExpandedIDs: 00000000b63e0000b83e0000d03e000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1191,7 +1174,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000b83c0000ba3c0000
+    m_ExpandedIDs: 00000000b63e0000b83e0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1218,7 +1201,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: 943700005c3700007c3700006238000076370000d8390000583800006e370000ba370000e2370000943e000010370000b034000096fd00008636000018c30100883d0000c4791500164200001a290f00bc410000ae410000c2410000c6350000dc490000484a00004e4a00006c5c0000bc630000ca630000c63d000066b5ffff86640000b0560000a6860000fe4e000054c400006e3d0000e03d0100464c0000865700008c570000da5b0000724a00009c3c00008a3c000000000000e43d0000de480000e4480000a83b0000f04400000e3a0000f03900008c3b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0

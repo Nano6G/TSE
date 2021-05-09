@@ -15,7 +15,7 @@ MonoBehaviour:
   speed: 1
   health: 1000
   value: 1000
-  sprite: {fileID: -7560284153744367771, guid: ff68731cf607e0f4aa965cdcde855315, type: 3}
-  anim: {fileID: 9100000, guid: 17358113410f20a4ebb761973a8ca546, type: 2}
+  sprite: {fileID: 0}
+  anim: {fileID: 9100000, guid: a3da88dc5cbc3954d833d09b32b8820f, type: 2}
   enemytype: 1
   ID: 3

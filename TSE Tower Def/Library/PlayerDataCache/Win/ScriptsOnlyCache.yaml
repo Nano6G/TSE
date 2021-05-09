@@ -80,29 +80,29 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11260}
     - Class: 114
-      Script: {instanceID: 11286}
+      Script: {instanceID: 11284}
     - Class: 114
-      Script: {instanceID: 11594}
+      Script: {instanceID: 11592}
     - Class: 114
-      Script: {instanceID: 11598}
+      Script: {instanceID: 11596}
     - Class: 114
-      Script: {instanceID: 11650}
+      Script: {instanceID: 11648}
     - Class: 114
-      Script: {instanceID: 12154}
+      Script: {instanceID: 12152}
     - Class: 114
-      Script: {instanceID: 12328}
+      Script: {instanceID: 12326}
     - Class: 114
-      Script: {instanceID: 12690}
+      Script: {instanceID: 12688}
     - Class: 114
-      Script: {instanceID: 14456}
+      Script: {instanceID: 14454}
     - Class: 114
-      Script: {instanceID: 14476}
+      Script: {instanceID: 14474}
     - Class: 114
-      Script: {instanceID: 14490}
+      Script: {instanceID: 14488}
     - Class: 114
-      Script: {instanceID: 14510}
+      Script: {instanceID: 14508}
     - Class: 114
-      Script: {instanceID: 14532}
+      Script: {instanceID: 14530}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -159,49 +159,49 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11260}
     - Class: 114
-      Script: {instanceID: 11286}
+      Script: {instanceID: 11284}
     - Class: 114
-      Script: {instanceID: 11336}
+      Script: {instanceID: 11334}
     - Class: 114
-      Script: {instanceID: 11376}
+      Script: {instanceID: 11374}
     - Class: 114
-      Script: {instanceID: 11472}
+      Script: {instanceID: 11470}
     - Class: 114
-      Script: {instanceID: 11594}
+      Script: {instanceID: 11592}
     - Class: 114
-      Script: {instanceID: 11650}
+      Script: {instanceID: 11648}
     - Class: 114
-      Script: {instanceID: 11754}
+      Script: {instanceID: 11752}
     - Class: 114
-      Script: {instanceID: 11870}
+      Script: {instanceID: 11868}
     - Class: 114
-      Script: {instanceID: 12048}
+      Script: {instanceID: 12046}
     - Class: 114
-      Script: {instanceID: 12328}
+      Script: {instanceID: 12326}
     - Class: 114
-      Script: {instanceID: 12476}
+      Script: {instanceID: 12474}
     - Class: 114
-      Script: {instanceID: 12590}
+      Script: {instanceID: 12588}
     - Class: 114
-      Script: {instanceID: 12638}
+      Script: {instanceID: 12636}
     - Class: 114
-      Script: {instanceID: 12746}
+      Script: {instanceID: 12744}
     - Class: 114
-      Script: {instanceID: 13030}
+      Script: {instanceID: 13028}
     - Class: 114
-      Script: {instanceID: 13114}
+      Script: {instanceID: 13112}
     - Class: 114
-      Script: {instanceID: 13446}
+      Script: {instanceID: 13444}
     - Class: 114
-      Script: {instanceID: 13842}
+      Script: {instanceID: 13840}
     - Class: 114
-      Script: {instanceID: 13916}
+      Script: {instanceID: 13914}
     - Class: 114
-      Script: {instanceID: 13960}
+      Script: {instanceID: 13958}
     - Class: 114
-      Script: {instanceID: 14104}
+      Script: {instanceID: 14102}
     - Class: 114
-      Script: {instanceID: 14490}
+      Script: {instanceID: 14488}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -871,5 +871,5 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/01MenuScene.unity
   - Assets/Scenes/02TestLevel.unity
-  playerPath: C:/Users/Mysticfox99/Downloads/TSE-master(4)/TSE-master/TSE TD-v2.2/TSE
+  playerPath: C:/Users/Mysticfox99/Downloads/TSE-master(3)/TSE-master/TSE TD - v2.2/TSE
     Tower Def.exe
