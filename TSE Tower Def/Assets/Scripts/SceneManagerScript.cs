@@ -12,6 +12,7 @@ public class SceneManagerScript : MonoBehaviour
     public Dropdown resolutionDropdown;
     
     Resolution[] resolutions; //Create array for the resolutions.
+    int selectscene;
     //Main Menu Code
     private void Start()
     {
@@ -44,6 +45,16 @@ public class SceneManagerScript : MonoBehaviour
     public void SwitchToScene(int input)
     {
         SceneManager.LoadScene(input);
+    }
+    public void SwitchToScenePlay()
+    {
+        if (selectscene > 0 && selectscene < 4)
+            SceneManager.LoadScene(selectscene);
+    }
+    public void ChangeSceneSelect(Dropdown dropin)
+    {
+        selectscene = dropin.value + 1;
+        Debug.Log("SELECTSCENE SET TO: " + selectscene);
     }
     public void ApplicationQuit()
     {

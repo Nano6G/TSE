@@ -61,14 +61,14 @@ public class BasicProjectile : MonoBehaviour
             Explosion();
         }
         else
-            Hit(target.gameObject);
+            Hit(target.gameObject,Dmg);
     }
 
-    protected void Hit(GameObject EnemyHit)
+    protected void Hit(GameObject EnemyHit, float damage)
     {
         //Apply damage here
         EnemyScript targetScript = EnemyHit.GetComponent<EnemyScript>();
-        targetScript.GetHit(Dmg);
+        targetScript.GetHit(damage);
         //Add effects on hit? Simple particle effect assigned in object/prefab
         if (slowamount > 0)
         {
@@ -89,7 +89,7 @@ public class BasicProjectile : MonoBehaviour
         {
             if (collider.transform.tag == "Enemy")
             {
-                Hit(collider.gameObject);
+                Hit(collider.gameObject, Dmg/2);
             }
         }
         //make co routine to stop instant destroy

@@ -23,7 +23,8 @@ public class Manager: MonoBehaviour
     }
 
     //Currency
-    private int currencyAvailable = 500;
+    [SerializeField]
+    int currencyAvailable = 500;
     public int CurrencyAvailable 
     { 
         get { return currencyAvailable; }
