@@ -8,6 +8,7 @@ public class EnemyScript : MonoBehaviour
 {
     [SerializeField]
     protected float speed = 5f, health, MaxHealth = 1;
+    [SerializeField]
     protected int value = 1;
     protected Transform target;
     //where on path the enemy is
@@ -28,21 +29,18 @@ public class EnemyScript : MonoBehaviour
     public int ID;
 
     //should be called before fully spawned
-    public void assignStats(float speedin, float healthin, int valuein, Sprite spritein, RuntimeAnimatorController controller,int IDin)
+    public void assignSelf(EnemyScriptableObject statObject)
     {
-        speed = speedin; MaxHealth = healthin; GetComponent<SpriteRenderer>().sprite = spritein; value = valuein;
-        health = MaxHealth;
-
-        animator = GetComponent<Animator>().runtimeAnimatorController;
-        animator = controller;
-        GetComponent<Animator>().runtimeAnimatorController = controller;
-        ID = IDin;
+        speed = statObject.speed; MaxHealth = statObject.health; value = statObject.value; ID = statObject.ID;
+        animator = statObject.anim;
+        GetComponent<Animator>().runtimeAnimatorController = statObject.anim;
     }
     protected void Start()
     {
         manager = GameObject.Find("Manager");
         managerScript = manager.GetComponent<Manager>();
         particles = GetComponentInChildren<ParticleSystem>();
+        animator = GetComponent<Animator>().runtimeAnimatorController;
         health = MaxHealth;
         target = WaypointsScript.points[0];
     }

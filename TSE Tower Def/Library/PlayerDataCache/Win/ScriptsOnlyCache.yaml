@@ -32,8 +32,10 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -269,7 +271,7 @@ ScriptsOnlyBuild:
     className: TMP_Dropdown
   - hash:
       serializedVersion: 2
-      Hash: 028deaa32d1dbb9c5230e7dabb3bca4b
+      Hash: edfa6a5fb8ff60e4c1587ee109830c17
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: EnemyScript
@@ -677,7 +679,7 @@ ScriptsOnlyBuild:
     className: Physics2DRaycaster
   - hash:
       serializedVersion: 2
-      Hash: 034433d4ef311e2173b48f8bd2fa59ac
+      Hash: 64d905c3e3f23e8cbaa220c24e1314c2
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: WaveSpawner
@@ -845,7 +847,7 @@ ScriptsOnlyBuild:
     className: PlayButtonScript
   - hash:
       serializedVersion: 2
-      Hash: 028deaa32d1dbb9c5230e7dabb3bca4b
+      Hash: edfa6a5fb8ff60e4c1587ee109830c17
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: EnemyBossScript
@@ -871,5 +873,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/01MenuScene.unity
   - Assets/Scenes/02TestLevel.unity
-  playerPath: C:/Users/Mysticfox99/Downloads/TSE-master(3)/TSE-master/TSE TD - v2.2/TSE
-    Tower Def.exe
+  playerPath: D:/##GITREPOS##/UNI/TSE/TSE TD - v2.3/MonoBleedingEdge/TSE Tower Def.exe

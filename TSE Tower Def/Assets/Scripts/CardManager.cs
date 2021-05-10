@@ -66,10 +66,10 @@ public class CardManager : MonoBehaviour
     }
     public void DrawCardButton()
     {
-        if (manager.CurrencyAvailable > 300)
+        if (manager.CurrencyAvailable > 150)
         {
             DrawCard();
-            manager.UpdateCurrency(-300);
+            manager.UpdateCurrency(-150);
         }
     }
     //draw a card from a deck into the hand

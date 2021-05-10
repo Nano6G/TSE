@@ -13,5 +13,7 @@ MonoBehaviour:
   m_Name: WaveTest Wave 5 BOSS
   m_EditorClassIdentifier: 
   wave:
+  - enemy: {fileID: 11400000, guid: ff6455ddd1a84564a800a7b6482cb1f9, type: 2}
+    numToSpawn: 3
   - enemy: {fileID: 11400000, guid: 3d28dac789c531043b370a548f908abe, type: 2}
     numToSpawn: 1
