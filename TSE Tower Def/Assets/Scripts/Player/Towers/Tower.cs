@@ -34,8 +34,8 @@ public class Tower : MonoBehaviour
 
     protected void Start()
     {
-
         manager = GameObject.Find("Manager").GetComponent<Manager>();
+        //call the UpdateTarget function every half second to save on resources doing it every update
         InvokeRepeating("UpdateTarget", 0, .5f);
         spriteRenderer = GetComponent<SpriteRenderer>();
         spriteRenderer.sprite = sprite;
@@ -70,6 +70,7 @@ public class Tower : MonoBehaviour
     // Update is called once per frame
     protected virtual void Update()
     {
+        //If the tower has a target dedected the invisible firepoint rotates to aim at it
         if (target != null)
         {
             Vector3 dir = target.position - transform.position;
@@ -97,16 +98,18 @@ public class Tower : MonoBehaviour
         }
         fireTimer = 1f / fireRate;
     }
-
+    //function to open and close the tower stats card
     private void OnMouseDown()
     {
         Debug.Log("Clicked");
+        //If stats card is not opened, open it, updating the values are leftover from planned upgrades, possible future feature
         if (TowerCard != null && !TowerCard.activeSelf)
         {
             TowerCard.SetActive(true);
             TowerCard.transform.Find("number holder").transform.Find("DAMAGE").GetComponent<Text>().text = damage.ToString();
             TowerCard.transform.Find("number holder").transform.Find("FIRERATE").GetComponent<Text>().text = fireRate.ToString();
         }
+        //if it is open, close it
         else if (TowerCard != null && TowerCard.activeSelf)
             TowerCard.SetActive(false);
     }

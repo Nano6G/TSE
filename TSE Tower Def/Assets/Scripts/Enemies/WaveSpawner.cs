@@ -52,7 +52,6 @@ public class WaveSpawner : MonoBehaviour
             //Spawn the current enemy 
             for (int j = 0; j < waves[waveNumber].wave[i].numToSpawn; j++)
             {
-                speed = waves[i].wave[i].enemy.speed;health = waves[i].wave[i].enemy.health;value = waves[i].wave[i].enemy.value;animator = waves[i].wave[i].enemy.anim;
                 ID = waves[waveNumber].wave[i].enemy.ID;
                 Debug.Log(waves[i].wave[i].enemy);
                 GameObject spawned;
@@ -68,7 +67,6 @@ public class WaveSpawner : MonoBehaviour
                     spawned = Instantiate(enemyList[0].gameObject, transform.position, transform.rotation);
                 }
                 //Get enemy scriptable object components from the wave scriptable object
-                //spawned.GetComponent<EnemyScript>().assignStats(speed, health, value, waves[i].wave[i].enemy.sprite, animator,ID);
                 spawned.GetComponent<EnemyScript>().assignSelf(enemies[ID]);
                 enemyCount++;
 

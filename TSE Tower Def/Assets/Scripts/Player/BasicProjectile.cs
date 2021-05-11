@@ -55,6 +55,7 @@ public class BasicProjectile : MonoBehaviour
 
     protected void HitTarget()
     {
+        //if the target explodes the special effect of an explosion is triggered
         if (explodeRadius > 0)
         {
             moving = false;

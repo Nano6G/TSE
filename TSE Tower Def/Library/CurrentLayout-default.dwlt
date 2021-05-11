@@ -74,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 231, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 28
+  controlID: 67
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -125,7 +125,7 @@ MonoBehaviour:
   m_MinSize: {x: 276, y: 192}
   m_MaxSize: {x: 4001, y: 8042}
   vertical: 1
-  controlID: 146
+  controlID: 182
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -148,7 +148,7 @@ MonoBehaviour:
     y: 0
     width: 1920
     height: 997
-  m_MinSize: {x: 875, y: 542}
+  m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &7
 MonoBehaviour:
@@ -218,7 +218,7 @@ MonoBehaviour:
   m_MinSize: {x: 739, y: 492}
   m_MaxSize: {x: 24004, y: 14042}
   vertical: 0
-  controlID: 145
+  controlID: 181
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -269,7 +269,7 @@ MonoBehaviour:
   m_MinSize: {x: 232, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 90
+  controlID: 109
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -347,8 +347,8 @@ MonoBehaviour:
     y: 316
     width: 550
     height: 631
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 26}
   m_Panes:
   - {fileID: 26}
@@ -404,9 +404,9 @@ MonoBehaviour:
     m_IsLocked: 1
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 8c410000
-    m_LastClickedID: 16780
-    m_ExpandedIDs: 000000008c4100008e41000000ca9a3b
+    m_SelectedIDs: 403f0000
+    m_LastClickedID: 16192
+    m_ExpandedIDs: 00000000403f0000423f000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -434,7 +434,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000008c4100008e410000
+    m_ExpandedIDs: 00000000403f0000423f0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -752,9 +752,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
+      m_SelectedIDs: 12360000
       m_LastClickedID: 0
-      m_ExpandedIDs: 4042ffff5642ffff1c43ffff6a44ffff2246ffff3446ffff6651ffff3c8effff7cd1ffff34f3ffff4cf3ffff58f3ffff64f3ffff76f3ffff82f3ffff90f3ffffd8f3ffffecf3ffff72f5ffff44420000287300004273000044730000
+      m_ExpandedIDs: 5cfbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -814,9 +814,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1.1381493, y: -0.4125132, z: -2.195725}
+    m_Target: {x: 1.9297469, y: 0.7387163, z: -2.3447266}
     speed: 2
-    m_Value: {x: 1.1381493, y: -0.4125132, z: -2.195725}
+    m_Value: {x: 1.9297469, y: 0.7387163, z: -2.3447266}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -866,9 +866,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 6.0715356
+    m_Target: 7.5662384
     speed: 2
-    m_Value: 6.0715356
+    m_Value: 7.5662384
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1148,20 +1148,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Prefabs/Player/Towers
+    - Assets/Scripts/Player
   m_ViewMode: 1
   m_StartGridSize: 95
   m_LastFolders:
-  - Assets/Prefabs/Player/Towers
+  - Assets/Scripts/Player
   m_LastFoldersGridSize: 95
   m_LastProjectPath: D:\##GITREPOS##\UNI\TSE\TSE Tower Def
   m_LockTracker:
     m_IsLocked: 1
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: ae530000
-    m_LastClickedID: 21422
-    m_ExpandedIDs: 000000008c4100008e4100009a410000a2410000a4410000b841000000ca9a3b
+    scrollPos: {x: 0, y: 73}
+    m_SelectedIDs: a83f0000
+    m_LastClickedID: 16296
+    m_ExpandedIDs: 00000000403f0000423f0000583f0000603f000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1189,7 +1189,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000008c4100008e410000
+    m_ExpandedIDs: 00000000403f0000423f0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
