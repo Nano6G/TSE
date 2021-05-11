@@ -34,10 +34,12 @@ public class Tower : MonoBehaviour
 
     protected void Start()
     {
+
         manager = GameObject.Find("Manager").GetComponent<Manager>();
         InvokeRepeating("UpdateTarget", 0, .5f);
         spriteRenderer = GetComponent<SpriteRenderer>();
         spriteRenderer.sprite = sprite;
+        GetComponent<SpriteRenderer>().sortingOrder = 110 - Mathf.RoundToInt(transform.position.y * 10);
         firePoint = transform.GetChild(0);
     }
     protected void UpdateTarget()

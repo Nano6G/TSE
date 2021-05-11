@@ -21,7 +21,7 @@ public class EnemyScript : MonoBehaviour
     protected Manager managerScript;
     protected RuntimeAnimatorController animator;
     protected ParticleSystem particles;
-    
+    protected bool facingRight = true;
     [Header("UI")]
     public Image healthBar;
 
@@ -80,6 +80,7 @@ public class EnemyScript : MonoBehaviour
             {
                 GetNextWayPoint();
             }
+            layer();
         }
         else
         {
@@ -107,6 +108,22 @@ public class EnemyScript : MonoBehaviour
         }
         wavePoint++;
         target = WaypointsScript.points[wavePoint];
+        if (target.transform.position.x < transform.position.x && facingRight)
+            Flip();
+        else if (target.transform.position.x > transform.position.x && !facingRight)
+            Flip();
+    }
+
+    void Flip()
+    {
+        facingRight = !facingRight;
+        Vector3 theScale = transform.localScale;
+        theScale.x *= -1;
+        transform.localScale = theScale;
+    }
+    void layer()
+    {
+        GetComponent<SpriteRenderer>().sortingOrder = 100 - Mathf.RoundToInt(transform.position.y * 10);
     }
 
     public void Frozen(float timeFrozen)
