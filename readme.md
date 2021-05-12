@@ -2,7 +2,7 @@
 
 # Castle Light the video game
 
-Welcome to Castle Light, a brand new tower defense game with a twist....
+Welcome to Castle Light, a brand-new tower defence game with a twist....
 
 - Choose your land
 - Place your towers
@@ -29,11 +29,11 @@ Once the player is satisfied with the cards, they can place the towers on the se
 
 To place the tower, select the tower card by clicking on the card. This selects the card which then the user can place on any of the selected zones on the map.
 
-To use the spells, the user has to select the spell card of their choice. If a card is seleceted, a red area marker is displayed which allows the player to hover over the area where they would like to cast the spell and select it.
+To use the spells, the user has to select the spell card of their choice. If a card is selected, a red area marker is displayed which allows the player to hover over the area where they would like to cast the spell and select it.
 
 ![image](https://user-images.githubusercontent.com/60940411/118044704-e7b36400-b36e-11eb-8844-06fe5c7cd8d8.png)
 
-Destroy your enemies no matter what but be careful with your currency as you will leave your kingdom vunreable.
+Destroy your enemies no matter what but be careful with your currency as you will leave your kingdom vulnerable.
 
 ![image](https://user-images.githubusercontent.com/60940411/118045218-8770f200-b36f-11eb-8f86-aa5971afd1f0.png)
 
