@@ -7,6 +7,7 @@ TagManager:
   - Enemy
   - Placeable
   - damageZone
+  - SceneManage
   layers:
   - Default
   - TransparentFX

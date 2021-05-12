@@ -81,10 +81,8 @@ public class BasicProjectile : MonoBehaviour
     protected void Explosion()
     {
         LayerMask Mask = LayerMask.GetMask("Gameplay");
-        //Collider2D[] hitObjs = Physics.OverlapSphere(transform.position, explodeRadius, 8);
         Collider2D[] hitObjs = Physics2D.OverlapCircleAll(transform.position, explodeRadius);
         //CREATE EXPLOSION HERE
-
         //damage all objects
         foreach (Collider2D collider in hitObjs)
         {

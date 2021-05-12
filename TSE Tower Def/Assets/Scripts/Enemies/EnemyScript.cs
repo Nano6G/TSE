@@ -14,7 +14,7 @@ public class EnemyScript : MonoBehaviour
     //where on path the enemy is
     protected int wavePoint;
 
-    protected float frozenTimer = 0f, slowTimer = 0f, SlowAmount = 0f;
+    protected float slowTimer = 0f, SlowAmount = 0f;
     protected bool moving;
 
     protected GameObject manager;
@@ -68,8 +68,6 @@ public class EnemyScript : MonoBehaviour
 
     protected virtual void Move()
     {
-        if (frozenTimer <= 0)
-        {
             //direction to move
             Vector2 dir = target.position - transform.position;
 
@@ -81,12 +79,6 @@ public class EnemyScript : MonoBehaviour
                 GetNextWayPoint();
             }
             layer();
-        }
-        else
-        {
-            //Debug.Log("FROZEN");
-            frozenTimer -= 1 * Time.deltaTime;
-        }
     }
     public void GetHit(float PhysDmg)
     {
@@ -126,10 +118,6 @@ public class EnemyScript : MonoBehaviour
         GetComponent<SpriteRenderer>().sortingOrder = 100 - Mathf.RoundToInt(transform.position.y * 10);
     }
 
-    public void Frozen(float timeFrozen)
-    {
-        frozenTimer += timeFrozen;
-    }
     public void Slow(float timeSlowed, float SlowAmnt)
     {
         slowTimer = timeSlowed;

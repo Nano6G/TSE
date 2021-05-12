@@ -27,7 +27,7 @@ public class WaveSpawner : MonoBehaviour
                 countdown = timeForWave;
                 countingdown = false;
             }
-            //if the wave is the last and all enemies are defeated, que win event
+            //if the wave is the last and all enemies are defeated, queue win event
             else if (waveNumber >= waves.Length && enemyCount == 0)
             {
                 GetComponentInParent<Manager>().WinEvent();
@@ -42,10 +42,7 @@ public class WaveSpawner : MonoBehaviour
     IEnumerator SpawnWave()
     {
         //CURRENTLY WONT SPAWN 3RD ENEMY TYPE, UNKNOWN WHY
-        float speed, health;
-        int value, ID;
-        RuntimeAnimatorController animator;
-        //waves[i].wave[i].enemy.speed, waves[i].wave[i].enemy.health, waves[i].wave[i].enemy.value, waves[i].wave[i].enemy.sprite, waves[i].wave[i].enemy.anim, waves[i].wave[i].enemy.ID
+        int ID;
         //Select each enemy
         for (int i = 0; i < waves[waveNumber].wave.Length; i++)
         {

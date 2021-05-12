@@ -39,8 +39,6 @@ public class SceneManagerScript : MonoBehaviour
         resolutionDropdown.AddOptions(options); //Add options list to resolutions dropdown
         resolutionDropdown.value = currentResolutionIndex; //Set the resolution to default
         resolutionDropdown.RefreshShownValue(); //Display the resolution
-
-        DontDestroyOnLoad(gameObject);
     }
     public void SwitchToScene(int input)
     {

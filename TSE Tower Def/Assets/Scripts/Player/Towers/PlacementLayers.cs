@@ -9,10 +9,4 @@ public class PlacementLayers : MonoBehaviour
     {
         GetComponent<SpriteRenderer>().sortingOrder = 100 - Mathf.RoundToInt(transform.position.y * 10);
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

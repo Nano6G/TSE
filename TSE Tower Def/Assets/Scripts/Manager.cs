@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Manager: MonoBehaviour
 {
@@ -22,6 +23,8 @@ public class Manager: MonoBehaviour
         set { cardCost = value; }
     }
 
+    public GameObject EndScreen;
+    public Text endText;
     //Currency
     [SerializeField]
     int currencyAvailable = 500;
@@ -43,13 +46,11 @@ public class Manager: MonoBehaviour
     Color gBlue = new Color(0f, 0f, 0.5f, 0.2f);//Tower
     Color gRed = new Color(0.5f, 0f, 0f, 0.2f);//Spell
 
-
     private void Start()
     {
         pHealth = 10;
         HealthText.text = pHealth.ToString();
         cardManager = GetComponent<CardManager>();
-        //currencyText = transform.Find("Currency1").GetComponent<Text>();
         StartCoroutine(UpdateCurrencyRepeat(2));
         currencyText.text = CurrencyAvailable.ToString();
     }
@@ -217,11 +218,22 @@ public class Manager: MonoBehaviour
     //LOSS
     void LoseEvent()
     {
-        Debug.Log("THE KINGDOM CRUMBLES");
+        SetEnd("DEFEATED");
     }
     //WIN
     public void WinEvent()
     {
-        Debug.Log("THE KINGDOM IS SAVED");
+        SetEnd("VICTORY");
     }
+
+    void SetEnd(string textin)
+    {
+        EndScreen.SetActive(true);
+        endText.text = textin;
+    }
+    public void ChangeScene(int intin)
+    {
+        SceneManager.LoadScene(0);
+    }
+
 }
