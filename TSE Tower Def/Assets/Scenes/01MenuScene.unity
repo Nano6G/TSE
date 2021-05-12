@@ -258,6 +258,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioMixer: {fileID: 24100000, guid: f89aef60ad1930840ab9047898153cc9, type: 2}
   resolutionDropdown: {fileID: 0}
+  pauseMenuUI: {fileID: 0}
 --- !u!114 &41359665
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3847,8 +3848,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f8f1a3fa096c3f40a05437822936ef6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioMixer: {fileID: 0}
+  audioMixer: {fileID: 24100000, guid: f89aef60ad1930840ab9047898153cc9, type: 2}
   resolutionDropdown: {fileID: 0}
+  pauseMenuUI: {fileID: 0}
 --- !u!4 &1023069146
 Transform:
   m_ObjectHideFlags: 0
@@ -6159,6 +6161,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioMixer: {fileID: 24100000, guid: f89aef60ad1930840ab9047898153cc9, type: 2}
   resolutionDropdown: {fileID: 1525433393}
+  pauseMenuUI: {fileID: 0}
 --- !u!1 &1698040324
 GameObject:
   m_ObjectHideFlags: 0
