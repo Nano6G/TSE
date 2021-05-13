@@ -32,7 +32,6 @@ public class CardManager : MonoBehaviour
     public List<Transform> CardLocs = new List<Transform>();
 
 
-    //public List<GameObject> HandObjs = new List<GameObject>();
     public GameObject cardObj;
 
     //ARRAYS FOR HAND

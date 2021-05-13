@@ -39,6 +39,7 @@ public class Manager: MonoBehaviour
     public Text currencyText;
     public Text HealthText;
 
+    bool gameEnded = false;
     //Temporary workaround for spells, otherwise they activate instantly
     int clicktimes = 0;
 
@@ -217,16 +218,19 @@ public class Manager: MonoBehaviour
     //LOSS
     void LoseEvent()
     {
-        SetEnd("DEFEATED");
+        if (!gameEnded)
+            SetEnd("DEFEATED");
     }
     //WIN
     public void WinEvent()
     {
-        SetEnd("VICTORY");
+        if(!gameEnded)
+            SetEnd("VICTORY");
     }
 
     void SetEnd(string textin)
     {
+        gameEnded = true;
         EndScreen.SetActive(true);
         endText.text = textin;
     }
