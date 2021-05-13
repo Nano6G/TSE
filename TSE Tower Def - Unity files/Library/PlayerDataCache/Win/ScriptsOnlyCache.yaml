@@ -94,15 +94,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12770}
     - Class: 114
-      Script: {instanceID: 14536}
+      Script: {instanceID: 14534}
     - Class: 114
-      Script: {instanceID: 14556}
+      Script: {instanceID: 14554}
     - Class: 114
-      Script: {instanceID: 14570}
+      Script: {instanceID: 14568}
     - Class: 114
-      Script: {instanceID: 14590}
+      Script: {instanceID: 14588}
     - Class: 114
-      Script: {instanceID: 14612}
+      Script: {instanceID: 14610}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -197,17 +197,17 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13528}
     - Class: 114
-      Script: {instanceID: 13922}
+      Script: {instanceID: 13920}
     - Class: 114
-      Script: {instanceID: 13996}
+      Script: {instanceID: 13994}
     - Class: 114
-      Script: {instanceID: 14040}
+      Script: {instanceID: 14038}
     - Class: 114
-      Script: {instanceID: 14184}
+      Script: {instanceID: 14182}
     - Class: 114
-      Script: {instanceID: 14556}
+      Script: {instanceID: 14554}
     - Class: 114
-      Script: {instanceID: 14570}
+      Script: {instanceID: 14568}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -259,6 +259,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 91
       Script: {instanceID: 0}
     - Class: 95
@@ -304,17 +308,17 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13528}
     - Class: 114
-      Script: {instanceID: 13922}
+      Script: {instanceID: 13920}
     - Class: 114
-      Script: {instanceID: 13996}
+      Script: {instanceID: 13994}
     - Class: 114
-      Script: {instanceID: 14040}
+      Script: {instanceID: 14038}
     - Class: 114
-      Script: {instanceID: 14184}
+      Script: {instanceID: 14182}
     - Class: 114
-      Script: {instanceID: 14556}
+      Script: {instanceID: 14554}
     - Class: 114
-      Script: {instanceID: 14570}
+      Script: {instanceID: 14568}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -336,6 +340,12 @@ ScriptsOnlyBuild:
     - Class: 223
       Script: {instanceID: 0}
     - Class: 224
+      Script: {instanceID: 0}
+    - Class: 241
+      Script: {instanceID: 0}
+    - Class: 243
+      Script: {instanceID: 0}
+    - Class: 245
       Script: {instanceID: 0}
     Assets/Scenes/04Level3.unity:
     - Class: 1
@@ -409,17 +419,17 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13528}
     - Class: 114
-      Script: {instanceID: 13922}
+      Script: {instanceID: 13920}
     - Class: 114
-      Script: {instanceID: 13996}
+      Script: {instanceID: 13994}
     - Class: 114
-      Script: {instanceID: 14040}
+      Script: {instanceID: 14038}
     - Class: 114
-      Script: {instanceID: 14184}
+      Script: {instanceID: 14182}
     - Class: 114
-      Script: {instanceID: 14556}
+      Script: {instanceID: 14554}
     - Class: 114
-      Script: {instanceID: 14570}
+      Script: {instanceID: 14568}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1085,4 +1095,5 @@ ScriptsOnlyBuild:
   - Assets/Scenes/02TestLevel.unity
   - Assets/Scenes/03Level2.unity
   - Assets/Scenes/04Level3.unity
-  playerPath: D:/##GITREPOS##/UNI/TSE/Castle Light/TSE Tower Def.exe
+  playerPath: C:/Users/Mysticfox99/Downloads/TSE-master(6)/TSE-master/Castle Light/TSE
+    Tower Def.exe
